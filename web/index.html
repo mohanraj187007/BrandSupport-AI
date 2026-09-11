@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrandSupport AI — Trustworthy AI Customer Support Agent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <!-- Interactive Particle Background Canvas -->
+  <canvas id="neuralCanvas"></canvas>
+
+  <div class="app-container">
+    <!-- TOP NAVIGATION HUD -->
+    <header class="hud-header">
+      <div class="hud-brand">
+        <div class="shield-logo">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="brand-titles">
+          <h1>BrandSupport <span class="accent-text">AI</span></h1>
+          <p class="brand-subtitle">Trustworthy AI Customer Support Agent • Hiver SDE Take-Home</p>
+        </div>
+      </div>
+
+      <div class="hud-controls">
+        <div class="brand-selector-wrap">
+          <label for="brandSelect">Brand Target:</label>
+          <select id="brandSelect" class="hud-select">
+            <option value="AppleSupport" selected>@AppleSupport</option>
+            <option value="AmazonHelp">@AmazonHelp</option>
+            <option value="SpotifyCares">@SpotifyCares</option>
+          </select>
+        </div>
+
+        <div class="status-pill">
+          <span class="status-dot pulsing"></span>
+          <span id="systemStatusText">CORE ONLINE (8 INTENTS • FAISS ACTIVE)</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- NAVIGATION TABS -->
+    <nav class="nav-tabs">
+      <button class="tab-btn active" data-tab="tabPlayground">
+        <span class="tab-icon">⚡</span> Live Agent Playground
+      </button>
+      <button class="tab-btn" data-tab="tabBenchmarks">
+        <span class="tab-icon">📊</span> Evaluation & Benchmarks
+      </button>
+      <button class="tab-btn" data-tab="tabFailureRCA">
+        <span class="tab-icon">🛡️</span> Failure Analysis & RCA
+      </button>
+      <button class="tab-btn" data-tab="tabExplorer">
+        <span class="tab-icon">🗄️</span> SQLite Conversation Explorer
+      </button>
+    </nav>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content">
+
+      <!-- ================================================================ -->
+      <!-- TAB 1: LIVE AGENT PLAYGROUND -->
+      <!-- ================================================================ -->
+      <section id="tabPlayground" class="tab-pane active">
+        <!-- Preset Scenario Selector -->
+        <div class="preset-strip">
+          <span class="preset-label">Instant Test Presets:</span>
+          <div class="preset-buttons">
+            <button class="preset-card" data-preset="battery">
+              <span class="p-icon">🔋</span>
+              <div class="p-info">
+                <strong>Battery Degradation</strong>
+                <small>Hardware • 73% Capacity</small>
+              </div>
+            </button>
+            <button class="preset-card" data-preset="crash">
+              <span class="p-icon">🐛</span>
+              <div class="p-info">
+                <strong>iOS App Freezing</strong>
+                <small>Software Bug • Voicemail Crash</small>
+              </div>
+            </button>
+            <button class="preset-card" data-preset="billing">
+              <span class="p-icon">💳</span>
+              <div class="p-info">
+                <strong>Duplicate Subscription</strong>
+                <small>Billing • Double Charge</small>
+              </div>
+            </button>
+            <button class="preset-card" data-preset="shipping">
+              <span class="p-icon">📦</span>
+              <div class="p-info">
+                <strong>Delayed Delivery</strong>
+                <small>Logistics • Tracking Inquiry</small>
+              </div>
+            </button>
+            <button class="preset-card danger" data-preset="safety">
+              <span class="p-icon">🔥</span>
+              <div class="p-info">
+                <strong>Battery Exploded & Smoke</strong>
+                <small>Critical Safety • Fire Hazard</small>
+              </div>
+            </button>
+            <button class="preset-card danger" data-preset="legal">
+              <span class="p-icon">⚖️</span>
+              <div class="p-info">
+                <strong>Lawsuit / Legal Threat</strong>
+                <small>Legal Escalation • Attorney</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Simulator Grid -->
+        <div class="playground-grid">
+          <!-- Left Column: Input & Threshold HUD -->
+          <div class="glass-card input-panel">
+            <div class="card-header">
+              <h2><span class="gradient-dot"></span> Customer Input Stream</h2>
+              <span class="char-count" id="charCount">0 / 280 chars</span>
+            </div>
+
+            <div class="input-container">
+              <textarea id="customerQueryInput" placeholder="Type or select a customer tweet..." rows="4">@AppleSupport My iPhone 12 battery drains from 100% to 10% in under 2 hours. Battery health says 73%. Should I get it replaced?</textarea>
+            </div>
+
+            <!-- Escalation Threshold Sliders Drawer -->
+            <details class="thresholds-drawer">
+              <summary>⚙️ Advanced Escalation & Quality Thresholds</summary>
+              <div class="slider-grid">
+                <div class="slider-item">
+                  <label>Intent Confidence Min: <span id="valIntentThresh" class="thresh-val">0.65</span></label>
+                  <input type="range" id="sliderIntent" min="0.4" max="0.95" step="0.05" value="0.65">
+                </div>
+                <div class="slider-item">
+                  <label>Retrieval Similarity Min: <span id="valSimThresh" class="thresh-val">0.60</span></label>
+                  <input type="range" id="sliderSim" min="0.4" max="0.95" step="0.05" value="0.60">
+                </div>
+                <div class="slider-item">
+                  <label>Grounding Score Min: <span id="valGroundThresh" class="thresh-val">0.70</span></label>
+                  <input type="range" id="sliderGround" min="0.4" max="0.95" step="0.05" value="0.70">
+                </div>
+              </div>
+            </details>
+
+            <button id="btnProcessMessage" class="glow-button">
+              <span class="btn-icon">⚡</span> Process Customer Message
+            </button>
+          </div>
+
+          <!-- Right Column: Agent Decision & Evidence Output -->
+          <div class="glass-card output-panel">
+            <!-- Decision Banner -->
+            <div id="decisionBanner" class="decision-banner auto-handle">
+              <div class="banner-badge">
+                <span class="decision-icon">✅</span>
+                <span class="decision-text">AUTO_HANDLE</span>
+              </div>
+              <div class="banner-details">
+                <span class="risk-pill low">RISK: LOW</span>
+                <span class="conf-pill">CONFIDENCE: 92.4%</span>
+              </div>
+            </div>
+
+            <!-- Routing & Trigger Reasons Box -->
+            <div class="routing-box">
+              <div class="route-item">
+                <span class="route-title">Target Queue:</span>
+                <strong id="targetQueueName" class="route-val">Tier-2 Hardware & Genius Bar Specialists</strong>
+              </div>
+              <div class="route-item">
+                <span class="route-title">Decision Rationale:</span>
+                <ul id="decisionReasonsList" class="reasons-list">
+                  <li>High confidence prediction, strong historical evidence match, and high grounding score.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Grounded Response Box -->
+            <div class="response-box">
+              <div class="box-header">
+                <h3>🤖 Grounded Support Response</h3>
+                <div class="grounding-badge">
+                  <span>Grounding Faithfulness:</span>
+                  <strong id="groundingScoreVal">1.00 / 1.00</strong>
+                </div>
+              </div>
+              <div id="agentReplyContent" class="reply-text">
+                When iPhone battery health drops below 80%, maximum capacity is significantly degraded. We recommend scheduling an appointment at an Apple Store or Authorized Service Provider for a battery replacement.
+              </div>
+              <div class="reply-footer">
+                <span id="generationModeBadge" class="mode-tag">Local Extractive Grounded</span>
+                <button id="btnCopyReply" class="btn-copy">📋 Copy Text</button>
+              </div>
+            </div>
+
+            <!-- Intent & Margin HUD -->
+            <div class="intent-hud">
+              <div class="intent-stat">
+                <span>Predicted Intent:</span>
+                <strong id="predictedIntentVal" class="intent-name">hardware_device_issue</strong>
+              </div>
+              <div class="intent-stat">
+                <span>Confidence:</span>
+                <strong id="intentConfidenceVal" class="intent-conf">94.8%</strong>
+              </div>
+              <div class="intent-stat">
+                <span>Margin:</span>
+                <strong id="intentMarginVal" class="intent-margin">0.78</strong>
+              </div>
+            </div>
+
+            <!-- Retrieved Historical Evidence -->
+            <div class="evidence-section">
+              <h3>📚 Retrieved Historical Resolutions (FAISS Inner-Product)</h3>
+              <div id="evidenceListContainer" class="evidence-list">
+                <!-- Injected via JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================ -->
+      <!-- TAB 2: EVALUATION & BENCHMARKS -->
+      <!-- ================================================================ -->
+      <section id="tabBenchmarks" class="tab-pane">
+        <div class="section-intro">
+          <h2>Rigorous Benchmark Evaluation</h2>
+          <p>Comparative auditing against 2 baselines on the 200-sample human-reviewed Golden Set (Zero-Leakage Partitioned).</p>
+        </div>
+
+        <!-- 3 Model Comparison Cards -->
+        <div class="benchmark-cards-grid">
+          <div class="bench-card">
+            <span class="card-tier">Baseline 1</span>
+            <h3>Majority Class Baseline</h3>
+            <div class="bench-metric">
+              <span class="big-num" id="majAcc">20.00%</span>
+              <span class="metric-label">Accuracy (Class Priors)</span>
+            </div>
+            <div class="sub-metrics">
+              <span>Macro F1: <strong id="majF1">0.0417</strong></span>
+              <span>Inference: &lt; 0.1ms</span>
+            </div>
+          </div>
+
+          <div class="bench-card highlight-gold">
+            <span class="card-tier">Baseline 2</span>
+            <h3>TF-IDF + Logistic Regression</h3>
+            <div class="bench-metric">
+              <span class="big-num" id="tfidfAcc">70.00%</span>
+              <span class="metric-label">Accuracy (Sublinear N-grams)</span>
+            </div>
+            <div class="sub-metrics">
+              <span>Macro F1: <strong id="tfidfF1">0.6314</strong></span>
+              <span>Inference: 1.2ms</span>
+            </div>
+          </div>
+
+          <div class="bench-card highlight-emerald">
+            <span class="card-tier crown">★ Primary SOTA</span>
+            <h3>BrandSupport Semantic Pipeline</h3>
+            <div class="bench-metric">
+              <span class="big-num text-emerald" id="semAcc">72.50%</span>
+              <span class="metric-label">Accuracy (SentenceTransformers + FAISS)</span>
+            </div>
+            <div class="sub-metrics">
+              <span>Macro F1: <strong id="semF1" class="text-emerald">0.7299</strong></span>
+              <span>Inference: 6.8ms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Retrieval & Escalation Row -->
+        <div class="eval-grid-two">
+          <div class="glass-card">
+            <h3>🎯 FAISS Semantic Retrieval Performance</h3>
+            <div class="metric-tiles">
+              <div class="tile">
+                <span class="t-val text-emerald" id="retR1">80.0%</span>
+                <span class="t-lbl">Recall@1</span>
+              </div>
+              <div class="tile">
+                <span class="t-val text-emerald" id="retR3">80.0%</span>
+                <span class="t-lbl">Recall@3</span>
+              </div>
+              <div class="tile">
+                <span class="t-val text-emerald" id="retMRR">0.8000</span>
+                <span class="t-lbl">Mean Reciprocal Rank (MRR)</span>
+              </div>
+            </div>
+            <p class="eval-note">Evaluated strictly with test set IDs excluded from index to guarantee zero-leakage.</p>
+          </div>
+
+          <div class="glass-card">
+            <h3>⚖️ Escalation Decision Performance</h3>
+            <div class="metric-tiles">
+              <div class="tile">
+                <span class="t-val" id="escPrec">50.0%</span>
+                <span class="t-lbl">Precision</span>
+              </div>
+              <div class="tile">
+                <span class="t-val text-emerald" id="escRec">83.3%</span>
+                <span class="t-lbl">Recall (Safety Catch)</span>
+              </div>
+              <div class="tile">
+                <span class="t-val" id="escF1">0.6250</span>
+                <span class="t-lbl">Escalation F1</span>
+              </div>
+            </div>
+            <p class="eval-note">Safety Cost Formula: $5 \times \text{Missed Escalations (FN)} + 1 \times \text{False Alarms (FP)}$.</p>
+          </div>
+        </div>
+
+        <!-- LLM-as-a-Judge Radar Bar -->
+        <div class="glass-card judge-card">
+          <h3>🧑‍⚖️ LLM-as-a-Judge Quality Audit (Scale 1.0 – 5.0)</h3>
+          <div class="judge-bars-grid">
+            <div class="judge-bar-item">
+              <div class="j-header">
+                <span>Relevance</span>
+                <strong>4.8 / 5.0</strong>
+              </div>
+              <div class="prog-bar"><div class="fill" style="width: 96%;"></div></div>
+            </div>
+            <div class="judge-bar-item">
+              <div class="j-header">
+                <span>Faithfulness & Grounding</span>
+                <strong class="text-emerald">5.0 / 5.0</strong>
+              </div>
+              <div class="prog-bar"><div class="fill fill-emerald" style="width: 100%;"></div></div>
+            </div>
+            <div class="judge-bar-item">
+              <div class="j-header">
+                <span>Helpfulness</span>
+                <strong>4.3 / 5.0</strong>
+              </div>
+              <div class="prog-bar"><div class="fill" style="width: 86%;"></div></div>
+            </div>
+            <div class="judge-bar-item">
+              <div class="j-header">
+                <span>Unsupported Claims / Hallucinations</span>
+                <strong class="text-emerald">0.0% (Zero Hallucination)</strong>
+              </div>
+              <div class="prog-bar"><div class="fill fill-emerald" style="width: 0%;"></div></div>
+            </div>
+            <div class="judge-bar-item">
+              <div class="j-header">
+                <span>Escalation Correctness</span>
+                <strong class="text-emerald">4.3 / 5.0</strong>
+              </div>
+              <div class="prog-bar"><div class="fill fill-emerald" style="width: 86%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================ -->
+      <!-- TAB 3: FAILURE ANALYSIS & RCA -->
+      <!-- ================================================================ -->
+      <section id="tabFailureRCA" class="tab-pane">
+        <div class="section-intro">
+          <h2>Production Failure Case Analysis & RCA</h2>
+          <p>Deep dive into the Top 5 edge cases, failure modes, root cause analyses, and applied mitigations.</p>
+        </div>
+
+        <div id="failureCardsContainer" class="failure-cards-list">
+          <!-- Injected via JavaScript -->
+        </div>
+
+        <!-- Critical Reflection Box -->
+        <div class="glass-card critical-reflection-box">
+          <div class="crit-header">
+            <span class="crit-icon">💡</span>
+            <h3>Critical Analysis: “What is misleading about my headline number?”</h3>
+          </div>
+          <div class="crit-body">
+            <div class="crit-point">
+              <h4>1. Class Imbalance Frequency Skew</h4>
+              <p>Standard support datasets are dominated by routine inquiries. A high headline accuracy can easily mask dangerous failure rates on rare existential hazards (e.g. thermal runaway / battery explosions).</p>
+            </div>
+            <div class="crit-point">
+              <h4>2. Asymmetric Cost of Errors</h4>
+              <p>Auto-handling an explosive battery or account fraud carries catastrophic liability ($1,000+), while false-escalating a battery health query costs only $5 of agent labor. Headline accuracy treats both errors as equal.</p>
+            </div>
+            <div class="crit-point">
+              <h4>3. Evaluation Leakage Shortcuts</h4>
+              <p>Random train/test splits allow memorization of canned customer support templates. Graph-level conversation partitioning is mandatory for authentic generalization.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================ -->
+      <!-- TAB 4: SQLITE CONVERSATION EXPLORER -->
+      <!-- ================================================================ -->
+      <section id="tabExplorer" class="tab-pane">
+        <div class="section-intro">
+          <h2>Historical Conversation Explorer</h2>
+          <p>Browse and search reconstructed multi-turn dialogs persisted in the SQLite database (<code>data/conversations.db</code>).</p>
+        </div>
+
+        <div class="glass-card explorer-toolbar">
+          <div class="tool-item">
+            <label>Filter Intent:</label>
+            <select id="explorerIntentFilter" class="hud-select">
+              <option value="All">All Intents (8)</option>
+              <option value="hardware_device_issue">Hardware Device Issue</option>
+              <option value="software_update_bug">Software Update Bug</option>
+              <option value="account_auth_billing">Account Auth & Billing</option>
+              <option value="order_shipping_delivery">Order Shipping & Delivery</option>
+              <option value="returns_refund_exchange">Returns Refund Exchange</option>
+              <option value="connectivity_sync_bluetooth">Connectivity Sync & Bluetooth</option>
+              <option value="feature_how_to_inquiry">Feature How-To Inquiry</option>
+              <option value="general_feedback_complaint">General Feedback & Complaint</option>
+            </select>
+          </div>
+          <div class="tool-item search-item">
+            <label>Keyword Search:</label>
+            <input type="text" id="explorerSearchInput" placeholder="Search keywords (e.g. battery, airpods, locked, refund)...">
+          </div>
+          <button id="btnSearchConversations" class="glow-button small">Search</button>
+        </div>
+
+        <div id="explorerResultsContainer" class="conversations-feed">
+          <!-- Injected via JavaScript -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

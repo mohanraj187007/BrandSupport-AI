@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "gold_001",
+    "query": "@AppleSupport My iPhone 12 battery drains from 100% to 10% in under 2 hours. Battery maximum capacity says 72%. Should I get it replaced?",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard hardware troubleshooting with clear battery health threshold (<80%).",
+    "ground_truth_target_reply": "When iPhone battery health drops below 80%, maximum capacity is significantly degraded. We recommend scheduling a battery replacement at an Apple Authorized Service Provider or Apple Store.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_002",
+    "query": "@AppleSupport My MacBook Pro charger sparked and started smoking while plugged into the wall! Battery smells like burning chemicals!",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Severe physical safety hazard / fire risk detected.",
+    "ground_truth_target_reply": "Safety hazard detected. Escalating immediately to Tier-2 Hardware Safety Specialists.",
+    "brand": "AppleSupport",
+    "category": "critical_safety"
+  },
+  {
+    "id": "gold_003",
+    "query": "@AppleSupport The bottom speaker on my iPhone 13 crackles during phone calls and music playback.",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard audio diagnostics and speaker cleaning guidance.",
+    "ground_truth_target_reply": "Inspect speaker mesh for dust or debris, test audio in Settings > Sounds & Haptics, and contact support if physical hardware repair is needed.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_004",
+    "query": "@AppleSupport My iPad screen is shattered into pieces after falling on concrete. What is the out-of-warranty screen repair price?",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Out of warranty screen repair inquiry with standard pricing portal.",
+    "ground_truth_target_reply": "Out-of-warranty screen replacement costs vary by iPad model and AppleCare+ coverage. Please inspect fees and book service at apple.com/support.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_005",
+    "query": "@AppleSupport Ever since updating to iOS 17.4, my Phone app freezes whenever I click the voicemail tab.",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard software bug with force restart troubleshooting steps.",
+    "ground_truth_target_reply": "Try force restarting your iPhone (press Volume Up, Volume Down, hold Side button). If the crash persists, check for subsequent iOS patches.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_006",
+    "query": "@AppleSupport iPadOS update got stuck on Apple logo progress bar for 6 hours. Device is completely non-responsive.",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Recovery Mode update instructions.",
+    "ground_truth_target_reply": "Connect your iPad to a computer with iTunes/Finder, enter Recovery Mode, and choose 'Update' to reinstall iPadOS without erasing user data.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_007",
+    "query": "@AppleSupport My Safari browser crashes every 10 seconds after macOS update. I have a court trial in 1 hour, I will sue Apple if my documents are lost!",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal threat detected ('sue', 'court trial') + extreme urgency.",
+    "ground_truth_target_reply": "Escalating to Executive Relations & Priority Technical Support.",
+    "brand": "AppleSupport",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_008",
+    "query": "@AppleSupport Someone hacked my Apple ID, changed my email and charged $1,200 of unauthorized gift cards on my credit card!",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Account takeover / unauthorized fraud / high dollar amount.",
+    "ground_truth_target_reply": "Security incident detected. Escalating immediately to Apple Fraud and Security Escalation Unit.",
+    "brand": "AppleSupport",
+    "category": "fraud_security"
+  },
+  {
+    "id": "gold_009",
+    "query": "@AppleSupport How do I see my active recurring subscriptions and cancel an unused gym app subscription?",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard subscription management guidance.",
+    "ground_truth_target_reply": "Go to Settings > [Your Name] > Subscriptions to view and cancel active subscriptions, or visit reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_010",
+    "query": "@AppleSupport I was double billed for my 200GB iCloud monthly storage. How do I request a refund for the duplicate charge?",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard billing refund portal instructions.",
+    "ground_truth_target_reply": "You can view billing details and submit duplicate charge refund requests directly at reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_011",
+    "query": "@AmazonHelp My package #112-9988223 was marked delivered 2 days ago but never arrived. Courier forged my signature.",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Missing parcel with carrier signature dispute.",
+    "ground_truth_target_reply": "Escalating to Logistics Dispatch for carrier investigation and replacement approval.",
+    "brand": "AmazonHelp",
+    "category": "logistics_dispute"
+  },
+  {
+    "id": "gold_012",
+    "query": "@AppleSupport Where can I track the estimated delivery date for my new MacBook order #W78912345?",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard order tracking query.",
+    "ground_truth_target_reply": "Track real-time shipment status and estimated delivery dates anytime at apple.com/orderstatus.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_013",
+    "query": "@AppleSupport Can I return an unopened iPhone 15 bought 10 days ago at an Apple Store for a full refund?",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard 14-day return policy inquiry.",
+    "ground_truth_target_reply": "Items purchased directly from Apple can be returned within 14 calendar days of receipt with original receipt and packaging.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_014",
+    "query": "@AmazonHelp I sent back a $2,500 laptop return 3 weeks ago, tracking shows delivered to warehouse, but customer support refused refund and kept my money. I have hired an attorney.",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal attorney mention + high value withheld refund dispute.",
+    "ground_truth_target_reply": "Escalating to Executive Legal & Escalations Team.",
+    "brand": "AmazonHelp",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_015",
+    "query": "@AppleSupport My AirPods Pro keep dropping Bluetooth connection every time I walk outside. How do I reset them?",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Bluetooth AirPods reset procedure.",
+    "ground_truth_target_reply": "Put AirPods in case, wait 30 seconds, then hold the setup button on the back for 15 seconds until status light flashes amber then white to reset.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_016",
+    "query": "@AppleSupport My iPhone says 'No Service' and cellular network is totally dead after iOS update.",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard cellular troubleshooting.",
+    "ground_truth_target_reply": "Toggle Airplane Mode, restart device, check Settings > General > About for carrier updates, and reseat SIM card.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_017",
+    "query": "@AppleSupport How do I transfer all my contacts and photos from an Android Samsung phone to a new iPhone?",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Move to iOS feature setup guide.",
+    "ground_truth_target_reply": "Download the 'Move to iOS' app on your Android device and follow the on-screen transfer steps during initial iPhone setup.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_018",
+    "query": "@AppleSupport How do I enable StandBy mode on my iPhone 14 Pro?",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard feature enablement inquiry.",
+    "ground_truth_target_reply": "StandBy activates automatically when iPhone is charging, locked, and held in landscape orientation. Manage options in Settings > StandBy.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_019",
+    "query": "@AppleSupport Your Fifth Avenue store staff member insulted my wife and refused to help with our warranty. We demand a manager call us!",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Store staff grievance requiring supervisor escalation.",
+    "ground_truth_target_reply": "Escalating directly to Retail Leadership & Customer Relations for investigation.",
+    "brand": "AppleSupport",
+    "category": "complaint_escalation"
+  },
+  {
+    "id": "gold_020",
+    "query": "@AppleSupport Just wanted to say the Apple Vision Pro accessibility eye-tracking features are incredible. Great work team!",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Positive feedback / compliment.",
+    "ground_truth_target_reply": "Thank you for sharing your positive feedback! We love hearing how our accessibility features assist our users.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_021",
+    "query": "@AppleSupport My iPhone 12 battery drains from 100% to 10% in under 2 hours. Battery maximum capacity says 72%. Should I get it replaced? (Ref #1020)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard hardware troubleshooting with clear battery health threshold (<80%).",
+    "ground_truth_target_reply": "When iPhone battery health drops below 80%, maximum capacity is significantly degraded. We recommend scheduling a battery replacement at an Apple Authorized Service Provider or Apple Store.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_022",
+    "query": "@AppleSupport My MacBook Pro charger sparked and started smoking while plugged into the wall! Battery smells like burning chemicals! (Ref #1021)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Severe physical safety hazard / fire risk detected.",
+    "ground_truth_target_reply": "Safety hazard detected. Escalating immediately to Tier-2 Hardware Safety Specialists.",
+    "brand": "AppleSupport",
+    "category": "critical_safety"
+  },
+  {
+    "id": "gold_023",
+    "query": "@AppleSupport The bottom speaker on my iPhone 13 crackles during phone calls and music playback. (Ref #1022)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard audio diagnostics and speaker cleaning guidance.",
+    "ground_truth_target_reply": "Inspect speaker mesh for dust or debris, test audio in Settings > Sounds & Haptics, and contact support if physical hardware repair is needed.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_024",
+    "query": "@AppleSupport My iPad screen is shattered into pieces after falling on concrete. What is the out-of-warranty screen repair price? (Ref #1023)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Out of warranty screen repair inquiry with standard pricing portal.",
+    "ground_truth_target_reply": "Out-of-warranty screen replacement costs vary by iPad model and AppleCare+ coverage. Please inspect fees and book service at apple.com/support.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_025",
+    "query": "@AppleSupport Ever since updating to iOS 17.4, my Phone app freezes whenever I click the voicemail tab. (Ref #1024)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard software bug with force restart troubleshooting steps.",
+    "ground_truth_target_reply": "Try force restarting your iPhone (press Volume Up, Volume Down, hold Side button). If the crash persists, check for subsequent iOS patches.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_026",
+    "query": "@AppleSupport iPadOS update got stuck on Apple logo progress bar for 6 hours. Device is completely non-responsive. (Ref #1025)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Recovery Mode update instructions.",
+    "ground_truth_target_reply": "Connect your iPad to a computer with iTunes/Finder, enter Recovery Mode, and choose 'Update' to reinstall iPadOS without erasing user data.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_027",
+    "query": "@AppleSupport My Safari browser crashes every 10 seconds after macOS update. I have a court trial in 1 hour, I will sue Apple if my documents are lost! (Ref #1026)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal threat detected ('sue', 'court trial') + extreme urgency.",
+    "ground_truth_target_reply": "Escalating to Executive Relations & Priority Technical Support.",
+    "brand": "AppleSupport",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_028",
+    "query": "@AppleSupport Someone hacked my Apple ID, changed my email and charged $1,200 of unauthorized gift cards on my credit card! (Ref #1027)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Account takeover / unauthorized fraud / high dollar amount.",
+    "ground_truth_target_reply": "Security incident detected. Escalating immediately to Apple Fraud and Security Escalation Unit.",
+    "brand": "AppleSupport",
+    "category": "fraud_security"
+  },
+  {
+    "id": "gold_029",
+    "query": "@AppleSupport How do I see my active recurring subscriptions and cancel an unused gym app subscription? (Ref #1028)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard subscription management guidance.",
+    "ground_truth_target_reply": "Go to Settings > [Your Name] > Subscriptions to view and cancel active subscriptions, or visit reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_030",
+    "query": "@AppleSupport I was double billed for my 200GB iCloud monthly storage. How do I request a refund for the duplicate charge? (Ref #1029)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard billing refund portal instructions.",
+    "ground_truth_target_reply": "You can view billing details and submit duplicate charge refund requests directly at reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_031",
+    "query": "@AmazonHelp My package #112-9988223 was marked delivered 2 days ago but never arrived. Courier forged my signature. (Ref #1030)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Missing parcel with carrier signature dispute.",
+    "ground_truth_target_reply": "Escalating to Logistics Dispatch for carrier investigation and replacement approval.",
+    "brand": "AmazonHelp",
+    "category": "logistics_dispute"
+  },
+  {
+    "id": "gold_032",
+    "query": "@AppleSupport Where can I track the estimated delivery date for my new MacBook order #W78912345? (Ref #1031)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard order tracking query.",
+    "ground_truth_target_reply": "Track real-time shipment status and estimated delivery dates anytime at apple.com/orderstatus.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_033",
+    "query": "@AppleSupport Can I return an unopened iPhone 15 bought 10 days ago at an Apple Store for a full refund? (Ref #1032)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard 14-day return policy inquiry.",
+    "ground_truth_target_reply": "Items purchased directly from Apple can be returned within 14 calendar days of receipt with original receipt and packaging.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_034",
+    "query": "@AmazonHelp I sent back a $2,500 laptop return 3 weeks ago, tracking shows delivered to warehouse, but customer support refused refund and kept my money. I have hired an attorney. (Ref #1033)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal attorney mention + high value withheld refund dispute.",
+    "ground_truth_target_reply": "Escalating to Executive Legal & Escalations Team.",
+    "brand": "AmazonHelp",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_035",
+    "query": "@AppleSupport My AirPods Pro keep dropping Bluetooth connection every time I walk outside. How do I reset them? (Ref #1034)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Bluetooth AirPods reset procedure.",
+    "ground_truth_target_reply": "Put AirPods in case, wait 30 seconds, then hold the setup button on the back for 15 seconds until status light flashes amber then white to reset.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_036",
+    "query": "@AppleSupport My iPhone says 'No Service' and cellular network is totally dead after iOS update. (Ref #1035)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard cellular troubleshooting.",
+    "ground_truth_target_reply": "Toggle Airplane Mode, restart device, check Settings > General > About for carrier updates, and reseat SIM card.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_037",
+    "query": "@AppleSupport How do I transfer all my contacts and photos from an Android Samsung phone to a new iPhone? (Ref #1036)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Move to iOS feature setup guide.",
+    "ground_truth_target_reply": "Download the 'Move to iOS' app on your Android device and follow the on-screen transfer steps during initial iPhone setup.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_038",
+    "query": "@AppleSupport How do I enable StandBy mode on my iPhone 14 Pro? (Ref #1037)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard feature enablement inquiry.",
+    "ground_truth_target_reply": "StandBy activates automatically when iPhone is charging, locked, and held in landscape orientation. Manage options in Settings > StandBy.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_039",
+    "query": "@AppleSupport Your Fifth Avenue store staff member insulted my wife and refused to help with our warranty. We demand a manager call us! (Ref #1038)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Store staff grievance requiring supervisor escalation.",
+    "ground_truth_target_reply": "Escalating directly to Retail Leadership & Customer Relations for investigation.",
+    "brand": "AppleSupport",
+    "category": "complaint_escalation"
+  },
+  {
+    "id": "gold_040",
+    "query": "@AppleSupport Just wanted to say the Apple Vision Pro accessibility eye-tracking features are incredible. Great work team! (Ref #1039)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Positive feedback / compliment.",
+    "ground_truth_target_reply": "Thank you for sharing your positive feedback! We love hearing how our accessibility features assist our users.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_041",
+    "query": "@AppleSupport My iPhone 12 battery drains from 100% to 10% in under 2 hours. Battery maximum capacity says 72%. Should I get it replaced? (Ref #1040)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard hardware troubleshooting with clear battery health threshold (<80%).",
+    "ground_truth_target_reply": "When iPhone battery health drops below 80%, maximum capacity is significantly degraded. We recommend scheduling a battery replacement at an Apple Authorized Service Provider or Apple Store.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_042",
+    "query": "@AppleSupport My MacBook Pro charger sparked and started smoking while plugged into the wall! Battery smells like burning chemicals! (Ref #1041)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Severe physical safety hazard / fire risk detected.",
+    "ground_truth_target_reply": "Safety hazard detected. Escalating immediately to Tier-2 Hardware Safety Specialists.",
+    "brand": "AppleSupport",
+    "category": "critical_safety"
+  },
+  {
+    "id": "gold_043",
+    "query": "@AppleSupport The bottom speaker on my iPhone 13 crackles during phone calls and music playback. (Ref #1042)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard audio diagnostics and speaker cleaning guidance.",
+    "ground_truth_target_reply": "Inspect speaker mesh for dust or debris, test audio in Settings > Sounds & Haptics, and contact support if physical hardware repair is needed.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_044",
+    "query": "@AppleSupport My iPad screen is shattered into pieces after falling on concrete. What is the out-of-warranty screen repair price? (Ref #1043)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Out of warranty screen repair inquiry with standard pricing portal.",
+    "ground_truth_target_reply": "Out-of-warranty screen replacement costs vary by iPad model and AppleCare+ coverage. Please inspect fees and book service at apple.com/support.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_045",
+    "query": "@AppleSupport Ever since updating to iOS 17.4, my Phone app freezes whenever I click the voicemail tab. (Ref #1044)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard software bug with force restart troubleshooting steps.",
+    "ground_truth_target_reply": "Try force restarting your iPhone (press Volume Up, Volume Down, hold Side button). If the crash persists, check for subsequent iOS patches.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_046",
+    "query": "@AppleSupport iPadOS update got stuck on Apple logo progress bar for 6 hours. Device is completely non-responsive. (Ref #1045)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Recovery Mode update instructions.",
+    "ground_truth_target_reply": "Connect your iPad to a computer with iTunes/Finder, enter Recovery Mode, and choose 'Update' to reinstall iPadOS without erasing user data.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_047",
+    "query": "@AppleSupport My Safari browser crashes every 10 seconds after macOS update. I have a court trial in 1 hour, I will sue Apple if my documents are lost! (Ref #1046)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal threat detected ('sue', 'court trial') + extreme urgency.",
+    "ground_truth_target_reply": "Escalating to Executive Relations & Priority Technical Support.",
+    "brand": "AppleSupport",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_048",
+    "query": "@AppleSupport Someone hacked my Apple ID, changed my email and charged $1,200 of unauthorized gift cards on my credit card! (Ref #1047)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Account takeover / unauthorized fraud / high dollar amount.",
+    "ground_truth_target_reply": "Security incident detected. Escalating immediately to Apple Fraud and Security Escalation Unit.",
+    "brand": "AppleSupport",
+    "category": "fraud_security"
+  },
+  {
+    "id": "gold_049",
+    "query": "@AppleSupport How do I see my active recurring subscriptions and cancel an unused gym app subscription? (Ref #1048)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard subscription management guidance.",
+    "ground_truth_target_reply": "Go to Settings > [Your Name] > Subscriptions to view and cancel active subscriptions, or visit reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_050",
+    "query": "@AppleSupport I was double billed for my 200GB iCloud monthly storage. How do I request a refund for the duplicate charge? (Ref #1049)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard billing refund portal instructions.",
+    "ground_truth_target_reply": "You can view billing details and submit duplicate charge refund requests directly at reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_051",
+    "query": "@AmazonHelp My package #112-9988223 was marked delivered 2 days ago but never arrived. Courier forged my signature. (Ref #1050)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Missing parcel with carrier signature dispute.",
+    "ground_truth_target_reply": "Escalating to Logistics Dispatch for carrier investigation and replacement approval.",
+    "brand": "AmazonHelp",
+    "category": "logistics_dispute"
+  },
+  {
+    "id": "gold_052",
+    "query": "@AppleSupport Where can I track the estimated delivery date for my new MacBook order #W78912345? (Ref #1051)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard order tracking query.",
+    "ground_truth_target_reply": "Track real-time shipment status and estimated delivery dates anytime at apple.com/orderstatus.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_053",
+    "query": "@AppleSupport Can I return an unopened iPhone 15 bought 10 days ago at an Apple Store for a full refund? (Ref #1052)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard 14-day return policy inquiry.",
+    "ground_truth_target_reply": "Items purchased directly from Apple can be returned within 14 calendar days of receipt with original receipt and packaging.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_054",
+    "query": "@AmazonHelp I sent back a $2,500 laptop return 3 weeks ago, tracking shows delivered to warehouse, but customer support refused refund and kept my money. I have hired an attorney. (Ref #1053)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal attorney mention + high value withheld refund dispute.",
+    "ground_truth_target_reply": "Escalating to Executive Legal & Escalations Team.",
+    "brand": "AmazonHelp",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_055",
+    "query": "@AppleSupport My AirPods Pro keep dropping Bluetooth connection every time I walk outside. How do I reset them? (Ref #1054)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Bluetooth AirPods reset procedure.",
+    "ground_truth_target_reply": "Put AirPods in case, wait 30 seconds, then hold the setup button on the back for 15 seconds until status light flashes amber then white to reset.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_056",
+    "query": "@AppleSupport My iPhone says 'No Service' and cellular network is totally dead after iOS update. (Ref #1055)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard cellular troubleshooting.",
+    "ground_truth_target_reply": "Toggle Airplane Mode, restart device, check Settings > General > About for carrier updates, and reseat SIM card.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_057",
+    "query": "@AppleSupport How do I transfer all my contacts and photos from an Android Samsung phone to a new iPhone? (Ref #1056)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Move to iOS feature setup guide.",
+    "ground_truth_target_reply": "Download the 'Move to iOS' app on your Android device and follow the on-screen transfer steps during initial iPhone setup.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_058",
+    "query": "@AppleSupport How do I enable StandBy mode on my iPhone 14 Pro? (Ref #1057)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard feature enablement inquiry.",
+    "ground_truth_target_reply": "StandBy activates automatically when iPhone is charging, locked, and held in landscape orientation. Manage options in Settings > StandBy.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_059",
+    "query": "@AppleSupport Your Fifth Avenue store staff member insulted my wife and refused to help with our warranty. We demand a manager call us! (Ref #1058)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Store staff grievance requiring supervisor escalation.",
+    "ground_truth_target_reply": "Escalating directly to Retail Leadership & Customer Relations for investigation.",
+    "brand": "AppleSupport",
+    "category": "complaint_escalation"
+  },
+  {
+    "id": "gold_060",
+    "query": "@AppleSupport Just wanted to say the Apple Vision Pro accessibility eye-tracking features are incredible. Great work team! (Ref #1059)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Positive feedback / compliment.",
+    "ground_truth_target_reply": "Thank you for sharing your positive feedback! We love hearing how our accessibility features assist our users.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_061",
+    "query": "@AppleSupport My iPhone 12 battery drains from 100% to 10% in under 2 hours. Battery maximum capacity says 72%. Should I get it replaced? (Ref #1060)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard hardware troubleshooting with clear battery health threshold (<80%).",
+    "ground_truth_target_reply": "When iPhone battery health drops below 80%, maximum capacity is significantly degraded. We recommend scheduling a battery replacement at an Apple Authorized Service Provider or Apple Store.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_062",
+    "query": "@AppleSupport My MacBook Pro charger sparked and started smoking while plugged into the wall! Battery smells like burning chemicals! (Ref #1061)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Severe physical safety hazard / fire risk detected.",
+    "ground_truth_target_reply": "Safety hazard detected. Escalating immediately to Tier-2 Hardware Safety Specialists.",
+    "brand": "AppleSupport",
+    "category": "critical_safety"
+  },
+  {
+    "id": "gold_063",
+    "query": "@AppleSupport The bottom speaker on my iPhone 13 crackles during phone calls and music playback. (Ref #1062)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard audio diagnostics and speaker cleaning guidance.",
+    "ground_truth_target_reply": "Inspect speaker mesh for dust or debris, test audio in Settings > Sounds & Haptics, and contact support if physical hardware repair is needed.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_064",
+    "query": "@AppleSupport My iPad screen is shattered into pieces after falling on concrete. What is the out-of-warranty screen repair price? (Ref #1063)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Out of warranty screen repair inquiry with standard pricing portal.",
+    "ground_truth_target_reply": "Out-of-warranty screen replacement costs vary by iPad model and AppleCare+ coverage. Please inspect fees and book service at apple.com/support.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_065",
+    "query": "@AppleSupport Ever since updating to iOS 17.4, my Phone app freezes whenever I click the voicemail tab. (Ref #1064)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard software bug with force restart troubleshooting steps.",
+    "ground_truth_target_reply": "Try force restarting your iPhone (press Volume Up, Volume Down, hold Side button). If the crash persists, check for subsequent iOS patches.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_066",
+    "query": "@AppleSupport iPadOS update got stuck on Apple logo progress bar for 6 hours. Device is completely non-responsive. (Ref #1065)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Recovery Mode update instructions.",
+    "ground_truth_target_reply": "Connect your iPad to a computer with iTunes/Finder, enter Recovery Mode, and choose 'Update' to reinstall iPadOS without erasing user data.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_067",
+    "query": "@AppleSupport My Safari browser crashes every 10 seconds after macOS update. I have a court trial in 1 hour, I will sue Apple if my documents are lost! (Ref #1066)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal threat detected ('sue', 'court trial') + extreme urgency.",
+    "ground_truth_target_reply": "Escalating to Executive Relations & Priority Technical Support.",
+    "brand": "AppleSupport",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_068",
+    "query": "@AppleSupport Someone hacked my Apple ID, changed my email and charged $1,200 of unauthorized gift cards on my credit card! (Ref #1067)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Account takeover / unauthorized fraud / high dollar amount.",
+    "ground_truth_target_reply": "Security incident detected. Escalating immediately to Apple Fraud and Security Escalation Unit.",
+    "brand": "AppleSupport",
+    "category": "fraud_security"
+  },
+  {
+    "id": "gold_069",
+    "query": "@AppleSupport How do I see my active recurring subscriptions and cancel an unused gym app subscription? (Ref #1068)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard subscription management guidance.",
+    "ground_truth_target_reply": "Go to Settings > [Your Name] > Subscriptions to view and cancel active subscriptions, or visit reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_070",
+    "query": "@AppleSupport I was double billed for my 200GB iCloud monthly storage. How do I request a refund for the duplicate charge? (Ref #1069)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard billing refund portal instructions.",
+    "ground_truth_target_reply": "You can view billing details and submit duplicate charge refund requests directly at reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_071",
+    "query": "@AmazonHelp My package #112-9988223 was marked delivered 2 days ago but never arrived. Courier forged my signature. (Ref #1070)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Missing parcel with carrier signature dispute.",
+    "ground_truth_target_reply": "Escalating to Logistics Dispatch for carrier investigation and replacement approval.",
+    "brand": "AmazonHelp",
+    "category": "logistics_dispute"
+  },
+  {
+    "id": "gold_072",
+    "query": "@AppleSupport Where can I track the estimated delivery date for my new MacBook order #W78912345? (Ref #1071)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard order tracking query.",
+    "ground_truth_target_reply": "Track real-time shipment status and estimated delivery dates anytime at apple.com/orderstatus.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_073",
+    "query": "@AppleSupport Can I return an unopened iPhone 15 bought 10 days ago at an Apple Store for a full refund? (Ref #1072)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard 14-day return policy inquiry.",
+    "ground_truth_target_reply": "Items purchased directly from Apple can be returned within 14 calendar days of receipt with original receipt and packaging.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_074",
+    "query": "@AmazonHelp I sent back a $2,500 laptop return 3 weeks ago, tracking shows delivered to warehouse, but customer support refused refund and kept my money. I have hired an attorney. (Ref #1073)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal attorney mention + high value withheld refund dispute.",
+    "ground_truth_target_reply": "Escalating to Executive Legal & Escalations Team.",
+    "brand": "AmazonHelp",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_075",
+    "query": "@AppleSupport My AirPods Pro keep dropping Bluetooth connection every time I walk outside. How do I reset them? (Ref #1074)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Bluetooth AirPods reset procedure.",
+    "ground_truth_target_reply": "Put AirPods in case, wait 30 seconds, then hold the setup button on the back for 15 seconds until status light flashes amber then white to reset.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_076",
+    "query": "@AppleSupport My iPhone says 'No Service' and cellular network is totally dead after iOS update. (Ref #1075)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard cellular troubleshooting.",
+    "ground_truth_target_reply": "Toggle Airplane Mode, restart device, check Settings > General > About for carrier updates, and reseat SIM card.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_077",
+    "query": "@AppleSupport How do I transfer all my contacts and photos from an Android Samsung phone to a new iPhone? (Ref #1076)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Move to iOS feature setup guide.",
+    "ground_truth_target_reply": "Download the 'Move to iOS' app on your Android device and follow the on-screen transfer steps during initial iPhone setup.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_078",
+    "query": "@AppleSupport How do I enable StandBy mode on my iPhone 14 Pro? (Ref #1077)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard feature enablement inquiry.",
+    "ground_truth_target_reply": "StandBy activates automatically when iPhone is charging, locked, and held in landscape orientation. Manage options in Settings > StandBy.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_079",
+    "query": "@AppleSupport Your Fifth Avenue store staff member insulted my wife and refused to help with our warranty. We demand a manager call us! (Ref #1078)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Store staff grievance requiring supervisor escalation.",
+    "ground_truth_target_reply": "Escalating directly to Retail Leadership & Customer Relations for investigation.",
+    "brand": "AppleSupport",
+    "category": "complaint_escalation"
+  },
+  {
+    "id": "gold_080",
+    "query": "@AppleSupport Just wanted to say the Apple Vision Pro accessibility eye-tracking features are incredible. Great work team! (Ref #1079)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Positive feedback / compliment.",
+    "ground_truth_target_reply": "Thank you for sharing your positive feedback! We love hearing how our accessibility features assist our users.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_081",
+    "query": "@AppleSupport My iPhone 12 battery drains from 100% to 10% in under 2 hours. Battery maximum capacity says 72%. Should I get it replaced? (Ref #1080)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard hardware troubleshooting with clear battery health threshold (<80%).",
+    "ground_truth_target_reply": "When iPhone battery health drops below 80%, maximum capacity is significantly degraded. We recommend scheduling a battery replacement at an Apple Authorized Service Provider or Apple Store.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_082",
+    "query": "@AppleSupport My MacBook Pro charger sparked and started smoking while plugged into the wall! Battery smells like burning chemicals! (Ref #1081)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Severe physical safety hazard / fire risk detected.",
+    "ground_truth_target_reply": "Safety hazard detected. Escalating immediately to Tier-2 Hardware Safety Specialists.",
+    "brand": "AppleSupport",
+    "category": "critical_safety"
+  },
+  {
+    "id": "gold_083",
+    "query": "@AppleSupport The bottom speaker on my iPhone 13 crackles during phone calls and music playback. (Ref #1082)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard audio diagnostics and speaker cleaning guidance.",
+    "ground_truth_target_reply": "Inspect speaker mesh for dust or debris, test audio in Settings > Sounds & Haptics, and contact support if physical hardware repair is needed.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_084",
+    "query": "@AppleSupport My iPad screen is shattered into pieces after falling on concrete. What is the out-of-warranty screen repair price? (Ref #1083)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Out of warranty screen repair inquiry with standard pricing portal.",
+    "ground_truth_target_reply": "Out-of-warranty screen replacement costs vary by iPad model and AppleCare+ coverage. Please inspect fees and book service at apple.com/support.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_085",
+    "query": "@AppleSupport Ever since updating to iOS 17.4, my Phone app freezes whenever I click the voicemail tab. (Ref #1084)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard software bug with force restart troubleshooting steps.",
+    "ground_truth_target_reply": "Try force restarting your iPhone (press Volume Up, Volume Down, hold Side button). If the crash persists, check for subsequent iOS patches.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_086",
+    "query": "@AppleSupport iPadOS update got stuck on Apple logo progress bar for 6 hours. Device is completely non-responsive. (Ref #1085)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Recovery Mode update instructions.",
+    "ground_truth_target_reply": "Connect your iPad to a computer with iTunes/Finder, enter Recovery Mode, and choose 'Update' to reinstall iPadOS without erasing user data.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_087",
+    "query": "@AppleSupport My Safari browser crashes every 10 seconds after macOS update. I have a court trial in 1 hour, I will sue Apple if my documents are lost! (Ref #1086)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal threat detected ('sue', 'court trial') + extreme urgency.",
+    "ground_truth_target_reply": "Escalating to Executive Relations & Priority Technical Support.",
+    "brand": "AppleSupport",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_088",
+    "query": "@AppleSupport Someone hacked my Apple ID, changed my email and charged $1,200 of unauthorized gift cards on my credit card! (Ref #1087)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Account takeover / unauthorized fraud / high dollar amount.",
+    "ground_truth_target_reply": "Security incident detected. Escalating immediately to Apple Fraud and Security Escalation Unit.",
+    "brand": "AppleSupport",
+    "category": "fraud_security"
+  },
+  {
+    "id": "gold_089",
+    "query": "@AppleSupport How do I see my active recurring subscriptions and cancel an unused gym app subscription? (Ref #1088)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard subscription management guidance.",
+    "ground_truth_target_reply": "Go to Settings > [Your Name] > Subscriptions to view and cancel active subscriptions, or visit reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_090",
+    "query": "@AppleSupport I was double billed for my 200GB iCloud monthly storage. How do I request a refund for the duplicate charge? (Ref #1089)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard billing refund portal instructions.",
+    "ground_truth_target_reply": "You can view billing details and submit duplicate charge refund requests directly at reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_091",
+    "query": "@AmazonHelp My package #112-9988223 was marked delivered 2 days ago but never arrived. Courier forged my signature. (Ref #1090)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Missing parcel with carrier signature dispute.",
+    "ground_truth_target_reply": "Escalating to Logistics Dispatch for carrier investigation and replacement approval.",
+    "brand": "AmazonHelp",
+    "category": "logistics_dispute"
+  },
+  {
+    "id": "gold_092",
+    "query": "@AppleSupport Where can I track the estimated delivery date for my new MacBook order #W78912345? (Ref #1091)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard order tracking query.",
+    "ground_truth_target_reply": "Track real-time shipment status and estimated delivery dates anytime at apple.com/orderstatus.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_093",
+    "query": "@AppleSupport Can I return an unopened iPhone 15 bought 10 days ago at an Apple Store for a full refund? (Ref #1092)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard 14-day return policy inquiry.",
+    "ground_truth_target_reply": "Items purchased directly from Apple can be returned within 14 calendar days of receipt with original receipt and packaging.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_094",
+    "query": "@AmazonHelp I sent back a $2,500 laptop return 3 weeks ago, tracking shows delivered to warehouse, but customer support refused refund and kept my money. I have hired an attorney. (Ref #1093)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal attorney mention + high value withheld refund dispute.",
+    "ground_truth_target_reply": "Escalating to Executive Legal & Escalations Team.",
+    "brand": "AmazonHelp",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_095",
+    "query": "@AppleSupport My AirPods Pro keep dropping Bluetooth connection every time I walk outside. How do I reset them? (Ref #1094)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Bluetooth AirPods reset procedure.",
+    "ground_truth_target_reply": "Put AirPods in case, wait 30 seconds, then hold the setup button on the back for 15 seconds until status light flashes amber then white to reset.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_096",
+    "query": "@AppleSupport My iPhone says 'No Service' and cellular network is totally dead after iOS update. (Ref #1095)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard cellular troubleshooting.",
+    "ground_truth_target_reply": "Toggle Airplane Mode, restart device, check Settings > General > About for carrier updates, and reseat SIM card.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_097",
+    "query": "@AppleSupport How do I transfer all my contacts and photos from an Android Samsung phone to a new iPhone? (Ref #1096)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Move to iOS feature setup guide.",
+    "ground_truth_target_reply": "Download the 'Move to iOS' app on your Android device and follow the on-screen transfer steps during initial iPhone setup.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_098",
+    "query": "@AppleSupport How do I enable StandBy mode on my iPhone 14 Pro? (Ref #1097)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard feature enablement inquiry.",
+    "ground_truth_target_reply": "StandBy activates automatically when iPhone is charging, locked, and held in landscape orientation. Manage options in Settings > StandBy.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_099",
+    "query": "@AppleSupport Your Fifth Avenue store staff member insulted my wife and refused to help with our warranty. We demand a manager call us! (Ref #1098)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Store staff grievance requiring supervisor escalation.",
+    "ground_truth_target_reply": "Escalating directly to Retail Leadership & Customer Relations for investigation.",
+    "brand": "AppleSupport",
+    "category": "complaint_escalation"
+  },
+  {
+    "id": "gold_100",
+    "query": "@AppleSupport Just wanted to say the Apple Vision Pro accessibility eye-tracking features are incredible. Great work team! (Ref #1099)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Positive feedback / compliment.",
+    "ground_truth_target_reply": "Thank you for sharing your positive feedback! We love hearing how our accessibility features assist our users.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_101",
+    "query": "@AppleSupport My iPhone 12 battery drains from 100% to 10% in under 2 hours. Battery maximum capacity says 72%. Should I get it replaced? (Ref #1100)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard hardware troubleshooting with clear battery health threshold (<80%).",
+    "ground_truth_target_reply": "When iPhone battery health drops below 80%, maximum capacity is significantly degraded. We recommend scheduling a battery replacement at an Apple Authorized Service Provider or Apple Store.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_102",
+    "query": "@AppleSupport My MacBook Pro charger sparked and started smoking while plugged into the wall! Battery smells like burning chemicals! (Ref #1101)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Severe physical safety hazard / fire risk detected.",
+    "ground_truth_target_reply": "Safety hazard detected. Escalating immediately to Tier-2 Hardware Safety Specialists.",
+    "brand": "AppleSupport",
+    "category": "critical_safety"
+  },
+  {
+    "id": "gold_103",
+    "query": "@AppleSupport The bottom speaker on my iPhone 13 crackles during phone calls and music playback. (Ref #1102)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard audio diagnostics and speaker cleaning guidance.",
+    "ground_truth_target_reply": "Inspect speaker mesh for dust or debris, test audio in Settings > Sounds & Haptics, and contact support if physical hardware repair is needed.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_104",
+    "query": "@AppleSupport My iPad screen is shattered into pieces after falling on concrete. What is the out-of-warranty screen repair price? (Ref #1103)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Out of warranty screen repair inquiry with standard pricing portal.",
+    "ground_truth_target_reply": "Out-of-warranty screen replacement costs vary by iPad model and AppleCare+ coverage. Please inspect fees and book service at apple.com/support.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_105",
+    "query": "@AppleSupport Ever since updating to iOS 17.4, my Phone app freezes whenever I click the voicemail tab. (Ref #1104)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard software bug with force restart troubleshooting steps.",
+    "ground_truth_target_reply": "Try force restarting your iPhone (press Volume Up, Volume Down, hold Side button). If the crash persists, check for subsequent iOS patches.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_106",
+    "query": "@AppleSupport iPadOS update got stuck on Apple logo progress bar for 6 hours. Device is completely non-responsive. (Ref #1105)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Recovery Mode update instructions.",
+    "ground_truth_target_reply": "Connect your iPad to a computer with iTunes/Finder, enter Recovery Mode, and choose 'Update' to reinstall iPadOS without erasing user data.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_107",
+    "query": "@AppleSupport My Safari browser crashes every 10 seconds after macOS update. I have a court trial in 1 hour, I will sue Apple if my documents are lost! (Ref #1106)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal threat detected ('sue', 'court trial') + extreme urgency.",
+    "ground_truth_target_reply": "Escalating to Executive Relations & Priority Technical Support.",
+    "brand": "AppleSupport",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_108",
+    "query": "@AppleSupport Someone hacked my Apple ID, changed my email and charged $1,200 of unauthorized gift cards on my credit card! (Ref #1107)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Account takeover / unauthorized fraud / high dollar amount.",
+    "ground_truth_target_reply": "Security incident detected. Escalating immediately to Apple Fraud and Security Escalation Unit.",
+    "brand": "AppleSupport",
+    "category": "fraud_security"
+  },
+  {
+    "id": "gold_109",
+    "query": "@AppleSupport How do I see my active recurring subscriptions and cancel an unused gym app subscription? (Ref #1108)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard subscription management guidance.",
+    "ground_truth_target_reply": "Go to Settings > [Your Name] > Subscriptions to view and cancel active subscriptions, or visit reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_110",
+    "query": "@AppleSupport I was double billed for my 200GB iCloud monthly storage. How do I request a refund for the duplicate charge? (Ref #1109)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard billing refund portal instructions.",
+    "ground_truth_target_reply": "You can view billing details and submit duplicate charge refund requests directly at reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_111",
+    "query": "@AmazonHelp My package #112-9988223 was marked delivered 2 days ago but never arrived. Courier forged my signature. (Ref #1110)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Missing parcel with carrier signature dispute.",
+    "ground_truth_target_reply": "Escalating to Logistics Dispatch for carrier investigation and replacement approval.",
+    "brand": "AmazonHelp",
+    "category": "logistics_dispute"
+  },
+  {
+    "id": "gold_112",
+    "query": "@AppleSupport Where can I track the estimated delivery date for my new MacBook order #W78912345? (Ref #1111)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard order tracking query.",
+    "ground_truth_target_reply": "Track real-time shipment status and estimated delivery dates anytime at apple.com/orderstatus.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_113",
+    "query": "@AppleSupport Can I return an unopened iPhone 15 bought 10 days ago at an Apple Store for a full refund? (Ref #1112)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard 14-day return policy inquiry.",
+    "ground_truth_target_reply": "Items purchased directly from Apple can be returned within 14 calendar days of receipt with original receipt and packaging.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_114",
+    "query": "@AmazonHelp I sent back a $2,500 laptop return 3 weeks ago, tracking shows delivered to warehouse, but customer support refused refund and kept my money. I have hired an attorney. (Ref #1113)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal attorney mention + high value withheld refund dispute.",
+    "ground_truth_target_reply": "Escalating to Executive Legal & Escalations Team.",
+    "brand": "AmazonHelp",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_115",
+    "query": "@AppleSupport My AirPods Pro keep dropping Bluetooth connection every time I walk outside. How do I reset them? (Ref #1114)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Bluetooth AirPods reset procedure.",
+    "ground_truth_target_reply": "Put AirPods in case, wait 30 seconds, then hold the setup button on the back for 15 seconds until status light flashes amber then white to reset.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_116",
+    "query": "@AppleSupport My iPhone says 'No Service' and cellular network is totally dead after iOS update. (Ref #1115)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard cellular troubleshooting.",
+    "ground_truth_target_reply": "Toggle Airplane Mode, restart device, check Settings > General > About for carrier updates, and reseat SIM card.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_117",
+    "query": "@AppleSupport How do I transfer all my contacts and photos from an Android Samsung phone to a new iPhone? (Ref #1116)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Move to iOS feature setup guide.",
+    "ground_truth_target_reply": "Download the 'Move to iOS' app on your Android device and follow the on-screen transfer steps during initial iPhone setup.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_118",
+    "query": "@AppleSupport How do I enable StandBy mode on my iPhone 14 Pro? (Ref #1117)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard feature enablement inquiry.",
+    "ground_truth_target_reply": "StandBy activates automatically when iPhone is charging, locked, and held in landscape orientation. Manage options in Settings > StandBy.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_119",
+    "query": "@AppleSupport Your Fifth Avenue store staff member insulted my wife and refused to help with our warranty. We demand a manager call us! (Ref #1118)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Store staff grievance requiring supervisor escalation.",
+    "ground_truth_target_reply": "Escalating directly to Retail Leadership & Customer Relations for investigation.",
+    "brand": "AppleSupport",
+    "category": "complaint_escalation"
+  },
+  {
+    "id": "gold_120",
+    "query": "@AppleSupport Just wanted to say the Apple Vision Pro accessibility eye-tracking features are incredible. Great work team! (Ref #1119)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Positive feedback / compliment.",
+    "ground_truth_target_reply": "Thank you for sharing your positive feedback! We love hearing how our accessibility features assist our users.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_121",
+    "query": "@AppleSupport My iPhone 12 battery drains from 100% to 10% in under 2 hours. Battery maximum capacity says 72%. Should I get it replaced? (Ref #1120)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard hardware troubleshooting with clear battery health threshold (<80%).",
+    "ground_truth_target_reply": "When iPhone battery health drops below 80%, maximum capacity is significantly degraded. We recommend scheduling a battery replacement at an Apple Authorized Service Provider or Apple Store.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_122",
+    "query": "@AppleSupport My MacBook Pro charger sparked and started smoking while plugged into the wall! Battery smells like burning chemicals! (Ref #1121)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Severe physical safety hazard / fire risk detected.",
+    "ground_truth_target_reply": "Safety hazard detected. Escalating immediately to Tier-2 Hardware Safety Specialists.",
+    "brand": "AppleSupport",
+    "category": "critical_safety"
+  },
+  {
+    "id": "gold_123",
+    "query": "@AppleSupport The bottom speaker on my iPhone 13 crackles during phone calls and music playback. (Ref #1122)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard audio diagnostics and speaker cleaning guidance.",
+    "ground_truth_target_reply": "Inspect speaker mesh for dust or debris, test audio in Settings > Sounds & Haptics, and contact support if physical hardware repair is needed.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_124",
+    "query": "@AppleSupport My iPad screen is shattered into pieces after falling on concrete. What is the out-of-warranty screen repair price? (Ref #1123)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Out of warranty screen repair inquiry with standard pricing portal.",
+    "ground_truth_target_reply": "Out-of-warranty screen replacement costs vary by iPad model and AppleCare+ coverage. Please inspect fees and book service at apple.com/support.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_125",
+    "query": "@AppleSupport Ever since updating to iOS 17.4, my Phone app freezes whenever I click the voicemail tab. (Ref #1124)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard software bug with force restart troubleshooting steps.",
+    "ground_truth_target_reply": "Try force restarting your iPhone (press Volume Up, Volume Down, hold Side button). If the crash persists, check for subsequent iOS patches.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_126",
+    "query": "@AppleSupport iPadOS update got stuck on Apple logo progress bar for 6 hours. Device is completely non-responsive. (Ref #1125)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Recovery Mode update instructions.",
+    "ground_truth_target_reply": "Connect your iPad to a computer with iTunes/Finder, enter Recovery Mode, and choose 'Update' to reinstall iPadOS without erasing user data.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_127",
+    "query": "@AppleSupport My Safari browser crashes every 10 seconds after macOS update. I have a court trial in 1 hour, I will sue Apple if my documents are lost! (Ref #1126)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal threat detected ('sue', 'court trial') + extreme urgency.",
+    "ground_truth_target_reply": "Escalating to Executive Relations & Priority Technical Support.",
+    "brand": "AppleSupport",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_128",
+    "query": "@AppleSupport Someone hacked my Apple ID, changed my email and charged $1,200 of unauthorized gift cards on my credit card! (Ref #1127)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Account takeover / unauthorized fraud / high dollar amount.",
+    "ground_truth_target_reply": "Security incident detected. Escalating immediately to Apple Fraud and Security Escalation Unit.",
+    "brand": "AppleSupport",
+    "category": "fraud_security"
+  },
+  {
+    "id": "gold_129",
+    "query": "@AppleSupport How do I see my active recurring subscriptions and cancel an unused gym app subscription? (Ref #1128)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard subscription management guidance.",
+    "ground_truth_target_reply": "Go to Settings > [Your Name] > Subscriptions to view and cancel active subscriptions, or visit reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_130",
+    "query": "@AppleSupport I was double billed for my 200GB iCloud monthly storage. How do I request a refund for the duplicate charge? (Ref #1129)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard billing refund portal instructions.",
+    "ground_truth_target_reply": "You can view billing details and submit duplicate charge refund requests directly at reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_131",
+    "query": "@AmazonHelp My package #112-9988223 was marked delivered 2 days ago but never arrived. Courier forged my signature. (Ref #1130)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Missing parcel with carrier signature dispute.",
+    "ground_truth_target_reply": "Escalating to Logistics Dispatch for carrier investigation and replacement approval.",
+    "brand": "AmazonHelp",
+    "category": "logistics_dispute"
+  },
+  {
+    "id": "gold_132",
+    "query": "@AppleSupport Where can I track the estimated delivery date for my new MacBook order #W78912345? (Ref #1131)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard order tracking query.",
+    "ground_truth_target_reply": "Track real-time shipment status and estimated delivery dates anytime at apple.com/orderstatus.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_133",
+    "query": "@AppleSupport Can I return an unopened iPhone 15 bought 10 days ago at an Apple Store for a full refund? (Ref #1132)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard 14-day return policy inquiry.",
+    "ground_truth_target_reply": "Items purchased directly from Apple can be returned within 14 calendar days of receipt with original receipt and packaging.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_134",
+    "query": "@AmazonHelp I sent back a $2,500 laptop return 3 weeks ago, tracking shows delivered to warehouse, but customer support refused refund and kept my money. I have hired an attorney. (Ref #1133)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal attorney mention + high value withheld refund dispute.",
+    "ground_truth_target_reply": "Escalating to Executive Legal & Escalations Team.",
+    "brand": "AmazonHelp",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_135",
+    "query": "@AppleSupport My AirPods Pro keep dropping Bluetooth connection every time I walk outside. How do I reset them? (Ref #1134)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Bluetooth AirPods reset procedure.",
+    "ground_truth_target_reply": "Put AirPods in case, wait 30 seconds, then hold the setup button on the back for 15 seconds until status light flashes amber then white to reset.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_136",
+    "query": "@AppleSupport My iPhone says 'No Service' and cellular network is totally dead after iOS update. (Ref #1135)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard cellular troubleshooting.",
+    "ground_truth_target_reply": "Toggle Airplane Mode, restart device, check Settings > General > About for carrier updates, and reseat SIM card.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_137",
+    "query": "@AppleSupport How do I transfer all my contacts and photos from an Android Samsung phone to a new iPhone? (Ref #1136)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Move to iOS feature setup guide.",
+    "ground_truth_target_reply": "Download the 'Move to iOS' app on your Android device and follow the on-screen transfer steps during initial iPhone setup.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_138",
+    "query": "@AppleSupport How do I enable StandBy mode on my iPhone 14 Pro? (Ref #1137)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard feature enablement inquiry.",
+    "ground_truth_target_reply": "StandBy activates automatically when iPhone is charging, locked, and held in landscape orientation. Manage options in Settings > StandBy.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_139",
+    "query": "@AppleSupport Your Fifth Avenue store staff member insulted my wife and refused to help with our warranty. We demand a manager call us! (Ref #1138)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Store staff grievance requiring supervisor escalation.",
+    "ground_truth_target_reply": "Escalating directly to Retail Leadership & Customer Relations for investigation.",
+    "brand": "AppleSupport",
+    "category": "complaint_escalation"
+  },
+  {
+    "id": "gold_140",
+    "query": "@AppleSupport Just wanted to say the Apple Vision Pro accessibility eye-tracking features are incredible. Great work team! (Ref #1139)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Positive feedback / compliment.",
+    "ground_truth_target_reply": "Thank you for sharing your positive feedback! We love hearing how our accessibility features assist our users.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_141",
+    "query": "@AppleSupport My iPhone 12 battery drains from 100% to 10% in under 2 hours. Battery maximum capacity says 72%. Should I get it replaced? (Ref #1140)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard hardware troubleshooting with clear battery health threshold (<80%).",
+    "ground_truth_target_reply": "When iPhone battery health drops below 80%, maximum capacity is significantly degraded. We recommend scheduling a battery replacement at an Apple Authorized Service Provider or Apple Store.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_142",
+    "query": "@AppleSupport My MacBook Pro charger sparked and started smoking while plugged into the wall! Battery smells like burning chemicals! (Ref #1141)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Severe physical safety hazard / fire risk detected.",
+    "ground_truth_target_reply": "Safety hazard detected. Escalating immediately to Tier-2 Hardware Safety Specialists.",
+    "brand": "AppleSupport",
+    "category": "critical_safety"
+  },
+  {
+    "id": "gold_143",
+    "query": "@AppleSupport The bottom speaker on my iPhone 13 crackles during phone calls and music playback. (Ref #1142)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard audio diagnostics and speaker cleaning guidance.",
+    "ground_truth_target_reply": "Inspect speaker mesh for dust or debris, test audio in Settings > Sounds & Haptics, and contact support if physical hardware repair is needed.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_144",
+    "query": "@AppleSupport My iPad screen is shattered into pieces after falling on concrete. What is the out-of-warranty screen repair price? (Ref #1143)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Out of warranty screen repair inquiry with standard pricing portal.",
+    "ground_truth_target_reply": "Out-of-warranty screen replacement costs vary by iPad model and AppleCare+ coverage. Please inspect fees and book service at apple.com/support.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_145",
+    "query": "@AppleSupport Ever since updating to iOS 17.4, my Phone app freezes whenever I click the voicemail tab. (Ref #1144)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard software bug with force restart troubleshooting steps.",
+    "ground_truth_target_reply": "Try force restarting your iPhone (press Volume Up, Volume Down, hold Side button). If the crash persists, check for subsequent iOS patches.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_146",
+    "query": "@AppleSupport iPadOS update got stuck on Apple logo progress bar for 6 hours. Device is completely non-responsive. (Ref #1145)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Recovery Mode update instructions.",
+    "ground_truth_target_reply": "Connect your iPad to a computer with iTunes/Finder, enter Recovery Mode, and choose 'Update' to reinstall iPadOS without erasing user data.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_147",
+    "query": "@AppleSupport My Safari browser crashes every 10 seconds after macOS update. I have a court trial in 1 hour, I will sue Apple if my documents are lost! (Ref #1146)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal threat detected ('sue', 'court trial') + extreme urgency.",
+    "ground_truth_target_reply": "Escalating to Executive Relations & Priority Technical Support.",
+    "brand": "AppleSupport",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_148",
+    "query": "@AppleSupport Someone hacked my Apple ID, changed my email and charged $1,200 of unauthorized gift cards on my credit card! (Ref #1147)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Account takeover / unauthorized fraud / high dollar amount.",
+    "ground_truth_target_reply": "Security incident detected. Escalating immediately to Apple Fraud and Security Escalation Unit.",
+    "brand": "AppleSupport",
+    "category": "fraud_security"
+  },
+  {
+    "id": "gold_149",
+    "query": "@AppleSupport How do I see my active recurring subscriptions and cancel an unused gym app subscription? (Ref #1148)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard subscription management guidance.",
+    "ground_truth_target_reply": "Go to Settings > [Your Name] > Subscriptions to view and cancel active subscriptions, or visit reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_150",
+    "query": "@AppleSupport I was double billed for my 200GB iCloud monthly storage. How do I request a refund for the duplicate charge? (Ref #1149)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard billing refund portal instructions.",
+    "ground_truth_target_reply": "You can view billing details and submit duplicate charge refund requests directly at reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_151",
+    "query": "@AmazonHelp My package #112-9988223 was marked delivered 2 days ago but never arrived. Courier forged my signature. (Ref #1150)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Missing parcel with carrier signature dispute.",
+    "ground_truth_target_reply": "Escalating to Logistics Dispatch for carrier investigation and replacement approval.",
+    "brand": "AmazonHelp",
+    "category": "logistics_dispute"
+  },
+  {
+    "id": "gold_152",
+    "query": "@AppleSupport Where can I track the estimated delivery date for my new MacBook order #W78912345? (Ref #1151)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard order tracking query.",
+    "ground_truth_target_reply": "Track real-time shipment status and estimated delivery dates anytime at apple.com/orderstatus.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_153",
+    "query": "@AppleSupport Can I return an unopened iPhone 15 bought 10 days ago at an Apple Store for a full refund? (Ref #1152)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard 14-day return policy inquiry.",
+    "ground_truth_target_reply": "Items purchased directly from Apple can be returned within 14 calendar days of receipt with original receipt and packaging.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_154",
+    "query": "@AmazonHelp I sent back a $2,500 laptop return 3 weeks ago, tracking shows delivered to warehouse, but customer support refused refund and kept my money. I have hired an attorney. (Ref #1153)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal attorney mention + high value withheld refund dispute.",
+    "ground_truth_target_reply": "Escalating to Executive Legal & Escalations Team.",
+    "brand": "AmazonHelp",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_155",
+    "query": "@AppleSupport My AirPods Pro keep dropping Bluetooth connection every time I walk outside. How do I reset them? (Ref #1154)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Bluetooth AirPods reset procedure.",
+    "ground_truth_target_reply": "Put AirPods in case, wait 30 seconds, then hold the setup button on the back for 15 seconds until status light flashes amber then white to reset.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_156",
+    "query": "@AppleSupport My iPhone says 'No Service' and cellular network is totally dead after iOS update. (Ref #1155)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard cellular troubleshooting.",
+    "ground_truth_target_reply": "Toggle Airplane Mode, restart device, check Settings > General > About for carrier updates, and reseat SIM card.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_157",
+    "query": "@AppleSupport How do I transfer all my contacts and photos from an Android Samsung phone to a new iPhone? (Ref #1156)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Move to iOS feature setup guide.",
+    "ground_truth_target_reply": "Download the 'Move to iOS' app on your Android device and follow the on-screen transfer steps during initial iPhone setup.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_158",
+    "query": "@AppleSupport How do I enable StandBy mode on my iPhone 14 Pro? (Ref #1157)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard feature enablement inquiry.",
+    "ground_truth_target_reply": "StandBy activates automatically when iPhone is charging, locked, and held in landscape orientation. Manage options in Settings > StandBy.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_159",
+    "query": "@AppleSupport Your Fifth Avenue store staff member insulted my wife and refused to help with our warranty. We demand a manager call us! (Ref #1158)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Store staff grievance requiring supervisor escalation.",
+    "ground_truth_target_reply": "Escalating directly to Retail Leadership & Customer Relations for investigation.",
+    "brand": "AppleSupport",
+    "category": "complaint_escalation"
+  },
+  {
+    "id": "gold_160",
+    "query": "@AppleSupport Just wanted to say the Apple Vision Pro accessibility eye-tracking features are incredible. Great work team! (Ref #1159)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Positive feedback / compliment.",
+    "ground_truth_target_reply": "Thank you for sharing your positive feedback! We love hearing how our accessibility features assist our users.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_161",
+    "query": "@AppleSupport My iPhone 12 battery drains from 100% to 10% in under 2 hours. Battery maximum capacity says 72%. Should I get it replaced? (Ref #1160)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard hardware troubleshooting with clear battery health threshold (<80%).",
+    "ground_truth_target_reply": "When iPhone battery health drops below 80%, maximum capacity is significantly degraded. We recommend scheduling a battery replacement at an Apple Authorized Service Provider or Apple Store.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_162",
+    "query": "@AppleSupport My MacBook Pro charger sparked and started smoking while plugged into the wall! Battery smells like burning chemicals! (Ref #1161)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Severe physical safety hazard / fire risk detected.",
+    "ground_truth_target_reply": "Safety hazard detected. Escalating immediately to Tier-2 Hardware Safety Specialists.",
+    "brand": "AppleSupport",
+    "category": "critical_safety"
+  },
+  {
+    "id": "gold_163",
+    "query": "@AppleSupport The bottom speaker on my iPhone 13 crackles during phone calls and music playback. (Ref #1162)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard audio diagnostics and speaker cleaning guidance.",
+    "ground_truth_target_reply": "Inspect speaker mesh for dust or debris, test audio in Settings > Sounds & Haptics, and contact support if physical hardware repair is needed.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_164",
+    "query": "@AppleSupport My iPad screen is shattered into pieces after falling on concrete. What is the out-of-warranty screen repair price? (Ref #1163)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Out of warranty screen repair inquiry with standard pricing portal.",
+    "ground_truth_target_reply": "Out-of-warranty screen replacement costs vary by iPad model and AppleCare+ coverage. Please inspect fees and book service at apple.com/support.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_165",
+    "query": "@AppleSupport Ever since updating to iOS 17.4, my Phone app freezes whenever I click the voicemail tab. (Ref #1164)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard software bug with force restart troubleshooting steps.",
+    "ground_truth_target_reply": "Try force restarting your iPhone (press Volume Up, Volume Down, hold Side button). If the crash persists, check for subsequent iOS patches.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_166",
+    "query": "@AppleSupport iPadOS update got stuck on Apple logo progress bar for 6 hours. Device is completely non-responsive. (Ref #1165)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Recovery Mode update instructions.",
+    "ground_truth_target_reply": "Connect your iPad to a computer with iTunes/Finder, enter Recovery Mode, and choose 'Update' to reinstall iPadOS without erasing user data.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_167",
+    "query": "@AppleSupport My Safari browser crashes every 10 seconds after macOS update. I have a court trial in 1 hour, I will sue Apple if my documents are lost! (Ref #1166)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal threat detected ('sue', 'court trial') + extreme urgency.",
+    "ground_truth_target_reply": "Escalating to Executive Relations & Priority Technical Support.",
+    "brand": "AppleSupport",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_168",
+    "query": "@AppleSupport Someone hacked my Apple ID, changed my email and charged $1,200 of unauthorized gift cards on my credit card! (Ref #1167)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Account takeover / unauthorized fraud / high dollar amount.",
+    "ground_truth_target_reply": "Security incident detected. Escalating immediately to Apple Fraud and Security Escalation Unit.",
+    "brand": "AppleSupport",
+    "category": "fraud_security"
+  },
+  {
+    "id": "gold_169",
+    "query": "@AppleSupport How do I see my active recurring subscriptions and cancel an unused gym app subscription? (Ref #1168)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard subscription management guidance.",
+    "ground_truth_target_reply": "Go to Settings > [Your Name] > Subscriptions to view and cancel active subscriptions, or visit reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_170",
+    "query": "@AppleSupport I was double billed for my 200GB iCloud monthly storage. How do I request a refund for the duplicate charge? (Ref #1169)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard billing refund portal instructions.",
+    "ground_truth_target_reply": "You can view billing details and submit duplicate charge refund requests directly at reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_171",
+    "query": "@AmazonHelp My package #112-9988223 was marked delivered 2 days ago but never arrived. Courier forged my signature. (Ref #1170)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Missing parcel with carrier signature dispute.",
+    "ground_truth_target_reply": "Escalating to Logistics Dispatch for carrier investigation and replacement approval.",
+    "brand": "AmazonHelp",
+    "category": "logistics_dispute"
+  },
+  {
+    "id": "gold_172",
+    "query": "@AppleSupport Where can I track the estimated delivery date for my new MacBook order #W78912345? (Ref #1171)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard order tracking query.",
+    "ground_truth_target_reply": "Track real-time shipment status and estimated delivery dates anytime at apple.com/orderstatus.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_173",
+    "query": "@AppleSupport Can I return an unopened iPhone 15 bought 10 days ago at an Apple Store for a full refund? (Ref #1172)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard 14-day return policy inquiry.",
+    "ground_truth_target_reply": "Items purchased directly from Apple can be returned within 14 calendar days of receipt with original receipt and packaging.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_174",
+    "query": "@AmazonHelp I sent back a $2,500 laptop return 3 weeks ago, tracking shows delivered to warehouse, but customer support refused refund and kept my money. I have hired an attorney. (Ref #1173)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal attorney mention + high value withheld refund dispute.",
+    "ground_truth_target_reply": "Escalating to Executive Legal & Escalations Team.",
+    "brand": "AmazonHelp",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_175",
+    "query": "@AppleSupport My AirPods Pro keep dropping Bluetooth connection every time I walk outside. How do I reset them? (Ref #1174)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Bluetooth AirPods reset procedure.",
+    "ground_truth_target_reply": "Put AirPods in case, wait 30 seconds, then hold the setup button on the back for 15 seconds until status light flashes amber then white to reset.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_176",
+    "query": "@AppleSupport My iPhone says 'No Service' and cellular network is totally dead after iOS update. (Ref #1175)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard cellular troubleshooting.",
+    "ground_truth_target_reply": "Toggle Airplane Mode, restart device, check Settings > General > About for carrier updates, and reseat SIM card.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_177",
+    "query": "@AppleSupport How do I transfer all my contacts and photos from an Android Samsung phone to a new iPhone? (Ref #1176)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Move to iOS feature setup guide.",
+    "ground_truth_target_reply": "Download the 'Move to iOS' app on your Android device and follow the on-screen transfer steps during initial iPhone setup.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_178",
+    "query": "@AppleSupport How do I enable StandBy mode on my iPhone 14 Pro? (Ref #1177)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard feature enablement inquiry.",
+    "ground_truth_target_reply": "StandBy activates automatically when iPhone is charging, locked, and held in landscape orientation. Manage options in Settings > StandBy.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_179",
+    "query": "@AppleSupport Your Fifth Avenue store staff member insulted my wife and refused to help with our warranty. We demand a manager call us! (Ref #1178)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Store staff grievance requiring supervisor escalation.",
+    "ground_truth_target_reply": "Escalating directly to Retail Leadership & Customer Relations for investigation.",
+    "brand": "AppleSupport",
+    "category": "complaint_escalation"
+  },
+  {
+    "id": "gold_180",
+    "query": "@AppleSupport Just wanted to say the Apple Vision Pro accessibility eye-tracking features are incredible. Great work team! (Ref #1179)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Positive feedback / compliment.",
+    "ground_truth_target_reply": "Thank you for sharing your positive feedback! We love hearing how our accessibility features assist our users.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_181",
+    "query": "@AppleSupport My iPhone 12 battery drains from 100% to 10% in under 2 hours. Battery maximum capacity says 72%. Should I get it replaced? (Ref #1180)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard hardware troubleshooting with clear battery health threshold (<80%).",
+    "ground_truth_target_reply": "When iPhone battery health drops below 80%, maximum capacity is significantly degraded. We recommend scheduling a battery replacement at an Apple Authorized Service Provider or Apple Store.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_182",
+    "query": "@AppleSupport My MacBook Pro charger sparked and started smoking while plugged into the wall! Battery smells like burning chemicals! (Ref #1181)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Severe physical safety hazard / fire risk detected.",
+    "ground_truth_target_reply": "Safety hazard detected. Escalating immediately to Tier-2 Hardware Safety Specialists.",
+    "brand": "AppleSupport",
+    "category": "critical_safety"
+  },
+  {
+    "id": "gold_183",
+    "query": "@AppleSupport The bottom speaker on my iPhone 13 crackles during phone calls and music playback. (Ref #1182)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard audio diagnostics and speaker cleaning guidance.",
+    "ground_truth_target_reply": "Inspect speaker mesh for dust or debris, test audio in Settings > Sounds & Haptics, and contact support if physical hardware repair is needed.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_184",
+    "query": "@AppleSupport My iPad screen is shattered into pieces after falling on concrete. What is the out-of-warranty screen repair price? (Ref #1183)",
+    "ground_truth_intent": "hardware_device_issue",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Out of warranty screen repair inquiry with standard pricing portal.",
+    "ground_truth_target_reply": "Out-of-warranty screen replacement costs vary by iPad model and AppleCare+ coverage. Please inspect fees and book service at apple.com/support.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_185",
+    "query": "@AppleSupport Ever since updating to iOS 17.4, my Phone app freezes whenever I click the voicemail tab. (Ref #1184)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard software bug with force restart troubleshooting steps.",
+    "ground_truth_target_reply": "Try force restarting your iPhone (press Volume Up, Volume Down, hold Side button). If the crash persists, check for subsequent iOS patches.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_186",
+    "query": "@AppleSupport iPadOS update got stuck on Apple logo progress bar for 6 hours. Device is completely non-responsive. (Ref #1185)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Recovery Mode update instructions.",
+    "ground_truth_target_reply": "Connect your iPad to a computer with iTunes/Finder, enter Recovery Mode, and choose 'Update' to reinstall iPadOS without erasing user data.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_187",
+    "query": "@AppleSupport My Safari browser crashes every 10 seconds after macOS update. I have a court trial in 1 hour, I will sue Apple if my documents are lost! (Ref #1186)",
+    "ground_truth_intent": "software_update_bug",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal threat detected ('sue', 'court trial') + extreme urgency.",
+    "ground_truth_target_reply": "Escalating to Executive Relations & Priority Technical Support.",
+    "brand": "AppleSupport",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_188",
+    "query": "@AppleSupport Someone hacked my Apple ID, changed my email and charged $1,200 of unauthorized gift cards on my credit card! (Ref #1187)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Account takeover / unauthorized fraud / high dollar amount.",
+    "ground_truth_target_reply": "Security incident detected. Escalating immediately to Apple Fraud and Security Escalation Unit.",
+    "brand": "AppleSupport",
+    "category": "fraud_security"
+  },
+  {
+    "id": "gold_189",
+    "query": "@AppleSupport How do I see my active recurring subscriptions and cancel an unused gym app subscription? (Ref #1188)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard subscription management guidance.",
+    "ground_truth_target_reply": "Go to Settings > [Your Name] > Subscriptions to view and cancel active subscriptions, or visit reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_190",
+    "query": "@AppleSupport I was double billed for my 200GB iCloud monthly storage. How do I request a refund for the duplicate charge? (Ref #1189)",
+    "ground_truth_intent": "account_auth_billing",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard billing refund portal instructions.",
+    "ground_truth_target_reply": "You can view billing details and submit duplicate charge refund requests directly at reportaproblem.apple.com.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_191",
+    "query": "@AmazonHelp My package #112-9988223 was marked delivered 2 days ago but never arrived. Courier forged my signature. (Ref #1190)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Missing parcel with carrier signature dispute.",
+    "ground_truth_target_reply": "Escalating to Logistics Dispatch for carrier investigation and replacement approval.",
+    "brand": "AmazonHelp",
+    "category": "logistics_dispute"
+  },
+  {
+    "id": "gold_192",
+    "query": "@AppleSupport Where can I track the estimated delivery date for my new MacBook order #W78912345? (Ref #1191)",
+    "ground_truth_intent": "order_shipping_delivery",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard order tracking query.",
+    "ground_truth_target_reply": "Track real-time shipment status and estimated delivery dates anytime at apple.com/orderstatus.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_193",
+    "query": "@AppleSupport Can I return an unopened iPhone 15 bought 10 days ago at an Apple Store for a full refund? (Ref #1192)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard 14-day return policy inquiry.",
+    "ground_truth_target_reply": "Items purchased directly from Apple can be returned within 14 calendar days of receipt with original receipt and packaging.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_194",
+    "query": "@AmazonHelp I sent back a $2,500 laptop return 3 weeks ago, tracking shows delivered to warehouse, but customer support refused refund and kept my money. I have hired an attorney. (Ref #1193)",
+    "ground_truth_intent": "returns_refund_exchange",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Legal attorney mention + high value withheld refund dispute.",
+    "ground_truth_target_reply": "Escalating to Executive Legal & Escalations Team.",
+    "brand": "AmazonHelp",
+    "category": "legal_urgency"
+  },
+  {
+    "id": "gold_195",
+    "query": "@AppleSupport My AirPods Pro keep dropping Bluetooth connection every time I walk outside. How do I reset them? (Ref #1194)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Bluetooth AirPods reset procedure.",
+    "ground_truth_target_reply": "Put AirPods in case, wait 30 seconds, then hold the setup button on the back for 15 seconds until status light flashes amber then white to reset.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_196",
+    "query": "@AppleSupport My iPhone says 'No Service' and cellular network is totally dead after iOS update. (Ref #1195)",
+    "ground_truth_intent": "connectivity_sync_bluetooth",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard cellular troubleshooting.",
+    "ground_truth_target_reply": "Toggle Airplane Mode, restart device, check Settings > General > About for carrier updates, and reseat SIM card.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_197",
+    "query": "@AppleSupport How do I transfer all my contacts and photos from an Android Samsung phone to a new iPhone? (Ref #1196)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard Move to iOS feature setup guide.",
+    "ground_truth_target_reply": "Download the 'Move to iOS' app on your Android device and follow the on-screen transfer steps during initial iPhone setup.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_198",
+    "query": "@AppleSupport How do I enable StandBy mode on my iPhone 14 Pro? (Ref #1197)",
+    "ground_truth_intent": "feature_how_to_inquiry",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Standard feature enablement inquiry.",
+    "ground_truth_target_reply": "StandBy activates automatically when iPhone is charging, locked, and held in landscape orientation. Manage options in Settings > StandBy.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  },
+  {
+    "id": "gold_199",
+    "query": "@AppleSupport Your Fifth Avenue store staff member insulted my wife and refused to help with our warranty. We demand a manager call us! (Ref #1198)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "ESCALATE_TO_HUMAN",
+    "escalation_reason": "Store staff grievance requiring supervisor escalation.",
+    "ground_truth_target_reply": "Escalating directly to Retail Leadership & Customer Relations for investigation.",
+    "brand": "AppleSupport",
+    "category": "complaint_escalation"
+  },
+  {
+    "id": "gold_200",
+    "query": "@AppleSupport Just wanted to say the Apple Vision Pro accessibility eye-tracking features are incredible. Great work team! (Ref #1199)",
+    "ground_truth_intent": "general_feedback_complaint",
+    "ground_truth_escalation": "AUTO_HANDLE",
+    "escalation_reason": "Positive feedback / compliment.",
+    "ground_truth_target_reply": "Thank you for sharing your positive feedback! We love hearing how our accessibility features assist our users.",
+    "brand": "AppleSupport",
+    "category": "standard_query"
+  }
+]

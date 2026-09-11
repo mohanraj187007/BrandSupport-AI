@@ -1,0 +1,457 @@
+{
+  "dataset_size": 200,
+  "brand": "AppleSupport",
+  "models_comparison": {
+    "Majority_Class_Baseline": {
+      "accuracy": 0.2,
+      "macro_precision": 0.025,
+      "macro_recall": 0.125,
+      "macro_f1": 0.0417
+    },
+    "TFIDF_LogisticRegression_Baseline": {
+      "accuracy": 0.7,
+      "macro_precision": 0.7068,
+      "macro_recall": 0.6458,
+      "macro_f1": 0.6314
+    },
+    "BrandSupport_Semantic_Pipeline": {
+      "accuracy": 0.725,
+      "macro_precision": 0.8244,
+      "macro_recall": 0.7083,
+      "macro_f1": 0.7299
+    }
+  },
+  "retrieval_performance": {
+    "recall@1": 0.8,
+    "recall@3": 0.8,
+    "recall@5": 0.8,
+    "mrr": 0.8
+  },
+  "escalation_performance": {
+    "accuracy": 0.7,
+    "precision": 0.5,
+    "recall": 0.8333,
+    "f1_score": 0.625,
+    "true_negatives_auto_handled": 90,
+    "false_positives_unnecessary_escalation": 50,
+    "false_negatives_missed_escalation": 10,
+    "true_positives_correctly_escalated": 50,
+    "safety_risk_cost": 100,
+    "confusion_matrix": [
+      [
+        90,
+        50
+      ],
+      [
+        10,
+        50
+      ]
+    ]
+  },
+  "reply_quality": {
+    "mean_jaccard_overlap": 0.1598,
+    "min_overlap": 0.0,
+    "max_overlap": 0.5789,
+    "mean_grounding_score": 1.0
+  },
+  "llm_judge_scores": {
+    "mean_relevance": 2.77,
+    "mean_faithfulness": 5.0,
+    "mean_helpfulness": 4.27,
+    "unsupported_claims_rate": 0.0,
+    "mean_escalation_correctness": 4.3,
+    "total_samples_judged": 200
+  },
+  "top_curated_failure_cases": [
+    {
+      "case_id": "FAIL_001",
+      "title": "Intent Ambiguity on Hardware vs Software Boot Failures",
+      "query": "@AppleSupport My iPhone 14 is stuck in an infinite restart boot loop after dropping it in water. Is it an iOS crash or water damage?",
+      "ground_truth_intent": "hardware_device_issue",
+      "predicted_intent": "software_update_bug",
+      "confidence": 0.58,
+      "escalation_decision": "AUTO_HANDLE",
+      "expected_escalation": "ESCALATE_TO_HUMAN",
+      "root_cause_analysis": "The query combines software symptoms ('boot loop', 'restart') with physical hardware trauma ('dropping in water'). The semantic classifier prioritized the software phrasing ('boot loop'), recommending standard recovery mode software updates, which could cause catastrophic short-circuiting on water-damaged hardware.",
+      "impact": "High risk of device destruction if user plugs wet phone into power for iTunes restore.",
+      "engineering_mitigation": "Added explicit safety trigger: Any physical trauma keywords ('water', 'submerged', 'dropped') co-occurring with boot issues now forces immediate ESCALATE_TO_HUMAN and directs user to dry the device without plugging into power."
+    },
+    {
+      "case_id": "FAIL_002",
+      "title": "Subtle Indirect Legal Threat Bypassing Strict Keyword Matcher",
+      "query": "@AppleSupport You have held my repair for 6 weeks without explanation. I am filing a formal claim with the municipal magistrate on Monday.",
+      "ground_truth_intent": "general_feedback_complaint",
+      "predicted_intent": "general_feedback_complaint",
+      "confidence": 0.72,
+      "escalation_decision": "AUTO_HANDLE",
+      "expected_escalation": "ESCALATE_TO_HUMAN",
+      "root_cause_analysis": "The customer used formal legal phrasing ('municipal magistrate', 'formal claim') rather than standard colloquial keywords like 'lawyer', 'sue', or 'attorney'. The agent gave a standard polite feedback response instead of routing to Executive Relations.",
+      "impact": "Executive customer grievance escalates into real legal litigation.",
+      "engineering_mitigation": "Expanded high-urgency regex patterns to include administrative and legal synonyms ('magistrate', 'tribunal', 'claim', 'ombudsman', 'arbitration')."
+    },
+    {
+      "case_id": "FAIL_003",
+      "title": "Cross-Product Retrieval Confusion in Historical Evidence",
+      "query": "@AppleSupport My AirPods Pro right earbud battery drains in 15 minutes, but the left earbud lasts 4 hours.",
+      "ground_truth_intent": "hardware_device_issue",
+      "predicted_intent": "hardware_device_issue",
+      "confidence": 0.89,
+      "retrieved_resolution": "When iPhone battery health drops below 80%, maximum capacity is degraded. Schedule an iPhone battery replacement.",
+      "generated_reply": "When battery health drops below 80%, maximum capacity is degraded. We recommend scheduling an appointment at an Apple Store.",
+      "escalation_decision": "AUTO_HANDLE",
+      "expected_escalation": "AUTO_HANDLE",
+      "root_cause_analysis": "The retriever matched on high semantic density for 'battery drain' and fetched an iPhone battery response instead of an AirPods-specific firmware reset / single earbud replacement guide because the index had more frequent iPhone cases.",
+      "impact": "Irrelevant advice (AirPods do not expose a battery health percentage menu).",
+      "engineering_mitigation": "Implemented product-entity tagging in metadata to boost historical cases matching the specific device entity (AirPods vs iPhone vs Mac)."
+    },
+    {
+      "case_id": "FAIL_004",
+      "title": "Account Compromise with High-Value Social Engineering Sarcasm",
+      "query": "@AppleSupport Thanks for letting someone in Russia drain $800 from my Apple ID balance while I was asleep. Outstanding security!",
+      "ground_truth_intent": "account_auth_billing",
+      "predicted_intent": "general_feedback_complaint",
+      "confidence": 0.61,
+      "escalation_decision": "ESCALATE_TO_HUMAN",
+      "expected_escalation": "ESCALATE_TO_HUMAN",
+      "root_cause_analysis": "Heavy sarcasm ('Outstanding security!', 'Thanks for letting someone...') caused the intent classifier to misclassify the primary intent as general feedback/complaint rather than unauthorized fraud. However, the escalation engine correctly triggered ESCALATE_TO_HUMAN due to 'drain $800' and low confidence.",
+      "impact": "Routed to general complaint queue rather than the priority Fraud and Security Response unit.",
+      "engineering_mitigation": "Added intent-independent financial amount regex (e.g. `\\$\\d{2,}`) that immediately remaps routing queue to Security, Fraud & Billing Team."
+    },
+    {
+      "case_id": "FAIL_005",
+      "title": "False Positive Escalation on Colloquial Figurative Exaggerations",
+      "query": "@AppleSupport This new autocorrect is killing me! It changes every word I type to something absurd.",
+      "ground_truth_intent": "software_update_bug",
+      "predicted_intent": "software_update_bug",
+      "confidence": 0.84,
+      "escalation_decision": "ESCALATE_TO_HUMAN",
+      "expected_escalation": "AUTO_HANDLE",
+      "root_cause_analysis": "Colloquial idiom 'killing me' triggered the safety/emergency keyword filter, causing an unnecessary human escalation for a trivial keyboard setting issue.",
+      "impact": "Increased human agent ticket volume and unnecessary support queue congestion.",
+      "engineering_mitigation": "Refined safety filter with negative contextual lookaheads to distinguish idioms like 'killing me / dead battery' from genuine physical safety threats."
+    }
+  ],
+  "runtime_failure_count": 90,
+  "primary_intent_full_metrics": {
+    "accuracy": 0.725,
+    "macro_precision": 0.8244,
+    "macro_recall": 0.7083,
+    "macro_f1": 0.7299,
+    "confusion_matrix": [
+      [
+        30,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        8,
+        2,
+        0,
+        0,
+        10
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0,
+        0,
+        0,
+        17,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10
+      ]
+    ],
+    "labels": [
+      "hardware_device_issue",
+      "software_update_bug",
+      "account_auth_billing",
+      "order_shipping_delivery",
+      "returns_refund_exchange",
+      "connectivity_sync_bluetooth",
+      "feature_how_to_inquiry",
+      "general_feedback_complaint"
+    ],
+    "per_class_report": {
+      "hardware_device_issue": {
+        "precision": 0.4838709677419355,
+        "recall": 0.75,
+        "f1-score": 0.5882352941176471,
+        "support": 40.0
+      },
+      "software_update_bug": {
+        "precision": 0.9523809523809523,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.7843137254901961,
+        "support": 30.0
+      },
+      "account_auth_billing": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1-score": 0.8571428571428571,
+        "support": 30.0
+      },
+      "order_shipping_delivery": {
+        "precision": 1.0,
+        "recall": 0.4,
+        "f1-score": 0.5714285714285714,
+        "support": 20.0
+      },
+      "returns_refund_exchange": {
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1-score": 0.9523809523809523,
+        "support": 20.0
+      },
+      "connectivity_sync_bluetooth": {
+        "precision": 1.0,
+        "recall": 0.85,
+        "f1-score": 0.918918918918919,
+        "support": 20.0
+      },
+      "feature_how_to_inquiry": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1-score": 0.6666666666666666,
+        "support": 20.0
+      },
+      "general_feedback_complaint": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1-score": 0.5,
+        "support": 20.0
+      },
+      "accuracy": 0.725,
+      "macro avg": {
+        "precision": 0.8244178536517246,
+        "recall": 0.7083333333333333,
+        "f1-score": 0.7298858732682262,
+        "support": 200.0
+      },
+      "weighted avg": {
+        "precision": 0.7930404273146209,
+        "recall": 0.725,
+        "f1-score": 0.7248050571579984,
+        "support": 200.0
+      }
+    }
+  },
+  "tfidf_intent_full_metrics": {
+    "accuracy": 0.7,
+    "macro_precision": 0.7068,
+    "macro_recall": 0.6458,
+    "macro_f1": 0.6314,
+    "confusion_matrix": [
+      [
+        40,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        0,
+        0,
+        0,
+        10,
+        0,
+        0
+      ],
+      [
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        10
+      ]
+    ],
+    "labels": [
+      "hardware_device_issue",
+      "software_update_bug",
+      "account_auth_billing",
+      "order_shipping_delivery",
+      "returns_refund_exchange",
+      "connectivity_sync_bluetooth",
+      "feature_how_to_inquiry",
+      "general_feedback_complaint"
+    ],
+    "per_class_report": {
+      "hardware_device_issue": {
+        "precision": 0.5714285714285714,
+        "recall": 1.0,
+        "f1-score": 0.7272727272727273,
+        "support": 40.0
+      },
+      "software_update_bug": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.6666666666666666,
+        "support": 30.0
+      },
+      "account_auth_billing": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1-score": 0.8571428571428571,
+        "support": 30.0
+      },
+      "order_shipping_delivery": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 20.0
+      },
+      "returns_refund_exchange": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1-score": 0.8,
+        "support": 20.0
+      },
+      "connectivity_sync_bluetooth": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1-score": 0.6666666666666666,
+        "support": 20.0
+      },
+      "feature_how_to_inquiry": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1-score": 0.6666666666666666,
+        "support": 20.0
+      },
+      "general_feedback_complaint": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1-score": 0.6666666666666666,
+        "support": 20.0
+      },
+      "accuracy": 0.7,
+      "macro avg": {
+        "precision": 0.7068452380952381,
+        "recall": 0.6458333333333333,
+        "f1-score": 0.6313852813852814,
+        "support": 200.0
+      },
+      "weighted avg": {
+        "precision": 0.693452380952381,
+        "recall": 0.7,
+        "f1-score": 0.654025974025974,
+        "support": 200.0
+      }
+    }
+  }
+}

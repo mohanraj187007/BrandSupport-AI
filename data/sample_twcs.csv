@@ -1,0 +1,501 @@
+tweet_id,author_id,inbound,created_at,text,response_tweet_id,in_response_to_tweet_id
+100000,cust_47412,True,2026-08-25T19:15:00Z,@AppleSupport My iPhone 11 battery is draining completely within 2 hours of moderate use. Battery health says 74%. Is it time for a replacement?,100001,
+100001,AppleSupport,False,2026-08-25T19:15:00Z,"@115858 We understand how frustrating rapid battery drain can be. When battery health drops below 80%, maximum capacity is significantly degraded. We recommend scheduling an appointment at your nearest Apple Store or Authorized Service Provider for a battery replacement. Learn more: https://t.co/battery-service",,100000
+100002,cust_10556,True,2026-08-16T15:34:00Z,@AppleSupport My MacBook Pro 14 M1 charging port is not recognizing the MagSafe connector. The LED light doesn't turn on at all.,100003,
+100003,AppleSupport,False,2026-08-16T15:34:00Z,"@115859 Let's get that charging issue checked out. First, try resetting the SMC or testing a standard USB-C cable. If the LED still won't illuminate, please DM us your serial number so we can look into hardware repair options: https://t.co/contact-us",,100002
+100004,cust_58190,True,2026-08-20T16:48:00Z,@AppleSupport I dropped my iPad Air and the screen is completely cracked and unresponsive to touch. How much will screen repair cost?,100005,
+100005,AppleSupport,False,2026-08-20T16:48:00Z,@115860 We are sorry to hear about the damaged display. Out-of-warranty screen repair pricing varies depending on your model and AppleCare+ coverage. Please check estimated repair fees and book an appointment here: https://t.co/screen-repair,,100004
+100006,cust_10969,True,2026-08-17T14:43:00Z,@AppleSupport My iPhone 13 speaker is crackling heavily whenever I play audio or take calls on speakerphone.,100007,
+100007,AppleSupport,False,2026-08-17T14:43:00Z,"@115861 We'd like to help with your speaker audio. Please inspect the speaker grille for any debris, test sound in Settings > Sounds & Haptics, and if the crackle persists, send us a DM with your current iOS version.",,100006
+100008,cust_29333,True,2026-08-23T15:38:00Z,@AppleSupport My Apple Watch Series 7 is overheating while charging on the magnetic puck and shows a temperature warning.,100009,
+100009,AppleSupport,False,2026-08-23T15:38:00Z,@115862 Safety is our top priority. Please disconnect the watch immediately and let it cool down in a well-ventilated area. Send us a direct message with your serial number so our hardware specialists can assist you: https://t.co/dm-apple,,100008
+100010,cust_68313,True,2026-08-23T17:37:00Z,"@AppleSupport Since updating to iOS 17.4, my Phone app crashes every time I tap on the voicemail tab. Phone completely freezes.",100011,
+100011,AppleSupport,False,2026-08-23T17:37:00Z,"@115863 Thanks for reaching out. Let's work to get your Phone app working smoothly. Try force restarting your device: press Volume Up, Volume Down, then hold the Side button until the Apple logo appears. DM us if the crash continues.",,100010
+100012,cust_71018,True,2026-08-28T10:30:00Z,@AppleSupport My iPadOS update got stuck halfway through the installation bar for over 4 hours. Screen shows Apple logo with a progress bar.,100013,
+100013,AppleSupport,False,2026-08-28T10:30:00Z,"@115864 We can help resolve that frozen update. Connect your iPad to a Mac or PC with Finder/iTunes, put the iPad into Recovery Mode, and select 'Update' (not Restore) to reinstall iPadOS without losing your data: https://t.co/recovery-mode",,100012
+100014,cust_67390,True,2026-08-12T17:31:00Z,@AppleSupport Safari tabs keep reloading and throwing 'A problem repeatedly occurred with this webpage' after the latest macOS update.,100015,
+100015,AppleSupport,False,2026-08-12T17:31:00Z,"@115865 That sounds disruptive. Please try clearing Safari history and website data under Safari > Settings > Privacy > Manage Website Data, and disable any active extensions to see if the issue persists.",,100014
+100016,cust_88773,True,2026-08-27T18:11:00Z,@AppleSupport Bluetooth audio stutters every 30 seconds on iOS 17.2 when connected to car stereo. Was fine on iOS 16.,100017,
+100017,AppleSupport,False,2026-08-27T18:11:00Z,"@115866 We appreciate the details. Please go to Settings > General > Transfer or Reset iPhone > Reset > Reset Network Settings, then re-pair your vehicle in Bluetooth settings.",,100016
+100018,cust_69262,True,2026-08-13T15:50:00Z,@AppleSupport The camera app is showing a black screen and won't take photos on my iPhone 14 Pro since yesterday.,100019,
+100019,AppleSupport,False,2026-08-13T15:50:00Z,"@115867 Let's troubleshoot the camera. Force close the Camera app, restart your iPhone, and check if third-party apps like Instagram can access the camera. If still black, send us a DM.",,100018
+100020,cust_58373,True,2026-08-14T09:39:00Z,@AppleSupport I was charged $14.99 on my credit card from Apple.com/bill but I have no active subscriptions under my Apple ID.,100021,
+100021,AppleSupport,False,2026-08-14T09:39:00Z,@115868 We can help clarify this charge. You can view your purchase history and active subscriptions by going to reportaproblem.apple.com or checking Settings > [Your Name] > Subscriptions. DM us if you need further billing investigation.,,100020
+100022,cust_85860,True,2026-08-23T20:49:00Z,@AppleSupport My Apple ID has been locked for security reasons. I tried resetting the password through iforgot.apple.com but got stuck in Account Recovery.,100023,
+100023,AppleSupport,False,2026-08-23T20:49:00Z,"@115869 Security is very important. When Account Recovery is initiated, automated verification takes time to ensure account safety. You can check your recovery status at iforgot.apple.com. Never share your 2FA codes with anyone.",,100022
+100024,cust_69742,True,2026-08-11T19:19:00Z,@AppleSupport I forgot my iCloud passcode and my trusted phone number changed. How do I regain access to my account?,100025,
+100025,AppleSupport,False,2026-08-11T19:19:00Z,"@115870 To regain access without your trusted phone number, visit iforgot.apple.com and select 'Don't have access to your trusted device or number' to begin the Account Recovery process: https://t.co/apple-id-recovery",,100024
+100026,cust_57079,True,2026-08-13T08:16:00Z,@AppleSupport I was double billed for my annual iCloud 2TB storage plan this morning. Can I get the duplicate charge reversed?,100027,
+100027,AppleSupport,False,2026-08-13T08:16:00Z,"@115871 We are happy to look into duplicate subscription billings. Please submit a refund request directly through reportaproblem.apple.com, or DM us your invoice number so our billing team can assist: https://t.co/dm-apple",,100026
+100028,cust_95617,True,2026-08-20T14:39:00Z,@AppleSupport My card was declined for an App Store in-app purchase even though my bank says the card is active and funded.,100029,
+100029,AppleSupport,False,2026-08-20T14:39:00Z,"@115872 Let's check your payment method. Please go to Settings > [Your Name] > Payment & Shipping, remove and re-add the card, or ensure your billing address matches your financial institution exactly.",,100028
+100030,cust_53400,True,2026-08-21T16:56:00Z,@AmazonHelp Where is my package for order #112-8923741? Tracking said delivered yesterday at 3 PM but nothing was left at my front door.,100031,
+100031,AmazonHelp,False,2026-08-21T16:56:00Z,"@115873 We're sorry to hear you haven't received your package. Occasionally couriers scan items before physical drop-off. Please check around your porch, with neighbors, or mail room. If not found by end of day, DM us your order ID.",,100030
+100032,cust_35882,True,2026-08-12T20:24:00Z,@AppleSupport My custom engraved iPad order #W89123477 shows 'Processing' for 2 weeks. When will it actually ship?,100033,
+100033,AppleSupport,False,2026-08-12T20:24:00Z,@115874 We know you're eager to get your new iPad. Engraved and customized hardware takes extra preparation time. You can check the estimated delivery window at apple.com/orderstatus. DM us your order number for specific tracking details.,,100032
+100034,cust_57574,True,2026-08-26T09:31:00Z,@AmazonHelp The courier marked my package as 'Delivery Attempted - Business Closed' but I was home all day at a residential house.,100035,
+100035,AmazonHelp,False,2026-08-26T09:31:00Z,@115875 We apologize for the inconvenience. Delivery drivers will typically re-attempt delivery on the next business day. Please DM us your order number so we can notify our logistics dispatch team: https://t.co/amzn-help,,100034
+100036,cust_30901,True,2026-08-22T18:24:00Z,@AmazonHelp I paid for same-day Prime delivery and it is now 11 PM with no delivery update. Will this arrive tonight?,100037,
+100037,AmazonHelp,False,2026-08-22T18:24:00Z,"@115876 We are very sorry for the delay with your Prime delivery. If the delivery window passes, please send us a DM with your 17-digit order number so we can track the courier route and issue a delivery credit.",,100036
+100038,cust_77538,True,2026-08-11T20:53:00Z,@AppleSupport What is your holiday return policy for an unopened Apple Watch bought online 20 days ago?,100039,
+100039,AppleSupport,False,2026-08-11T20:53:00Z,"@115877 Standard Apple return policy is 14 calendar days from receipt, but items purchased during eligible holiday periods may qualify for extended returns. Check your order at apple.com/orderstatus or DM us your order number.",,100038
+100040,cust_49968,True,2026-08-28T11:23:00Z,"@AmazonHelp I dropped off my return at UPS 8 days ago and tracking shows received, but refund has not posted to my account.",100041,
+100041,AmazonHelp,False,2026-08-28T11:23:00Z,@115878 Refunds typically process within 3-5 business days once the return center inspects the item. Please DM us your return tracking number and order ID so we can verify the return status.,,100040
+100042,cust_82009,True,2026-08-17T08:15:00Z,@AppleSupport I received a defective HomePod mini in the mail. Can I exchange it at an Apple retail store today?,100043,
+100043,AppleSupport,False,2026-08-17T08:15:00Z,"@115879 Yes, you can exchange an online purchase at any official Apple Store within 14 days of delivery, subject to in-store inventory. Please bring your original receipt and government photo ID.",,100042
+100044,cust_74980,True,2026-08-21T12:24:00Z,@AmazonHelp I was sent the wrong shoe size (size 9 instead of 11). How do I get an immediate replacement without being charged again?,100045,
+100045,AmazonHelp,False,2026-08-21T12:24:00Z,@115880 We apologize for the mixup. Go to 'Your Orders' > 'Return or Replace Items' > select 'Wrong Item Sent' to generate a free prepaid return label and trigger an immediate replacement order at no charge.,,100044
+100046,cust_97684,True,2026-08-15T13:46:00Z,@AppleSupport My AirPods Pro (2nd Gen) keep disconnecting from my iPhone 15 during phone calls every 3 minutes.,100047,
+100047,AppleSupport,False,2026-08-15T13:46:00Z,"@115881 Let's get your AirPods connected reliably. Place both AirPods in the charging case, close the lid for 30 seconds, then hold the setup button on the back for 15 seconds until the status light flashes amber then white to reset: https://t.co/airpods-reset",,100046
+100048,cust_71792,True,2026-08-10T18:38:00Z,@AppleSupport Photos on my iPhone are not uploading to iCloud Photo Library. It says 'Paused - Low Power Mode' even though plugged into power.,100049,
+100049,AppleSupport,False,2026-08-10T18:38:00Z,"@115882 Let's resume your iCloud Photos sync. Go to Settings > Battery and ensure Low Power Mode is off, then open the Photos app > Library > scroll to the bottom and tap 'Resume'. Make sure you are connected to unmetered Wi-Fi.",,100048
+100050,cust_99509,True,2026-08-10T20:33:00Z,@AppleSupport My iPhone says 'No Service' or 'Searching...' and won't connect to cellular data even after restarting.,100051,
+100051,AppleSupport,False,2026-08-10T20:33:00Z,"@115883 We can help with cellular connectivity. Try toggling Airplane Mode on/off, check for a Carrier Settings update in Settings > General > About, and re-seat your physical SIM or verify your eSIM status with your carrier.",,100050
+100052,cust_20801,True,2026-08-10T11:49:00Z,@AppleSupport Apple Watch won't sync fitness workouts or step count to Health app on iPhone since yesterday.,100053,
+100053,AppleSupport,False,2026-08-10T11:49:00Z,"@115884 Let's ensure your Health data syncs properly. On your iPhone, verify Bluetooth and Wi-Fi are enabled, restart both devices simultaneously, and check Settings > Privacy & Security > Motion & Fitness to confirm Fitness Tracking is on.",,100052
+100054,cust_78184,True,2026-08-16T17:41:00Z,"@AppleSupport How do I transfer all my photos, apps, and WhatsApp messages from an old Android phone to a new iPhone 15?",100055,
+100055,AppleSupport,False,2026-08-16T17:41:00Z,@115885 Welcome to iPhone! You can use our 'Move to iOS' app from the Google Play Store during the initial iPhone setup screen. Follow our step-by-step migration guide here: https://t.co/move-to-ios,,100054
+100056,cust_45396,True,2026-08-21T12:29:00Z,@AppleSupport How can I set up Family Sharing so my kids can share our 2TB iCloud storage plan without seeing my personal messages?,100057,
+100057,AppleSupport,False,2026-08-21T12:29:00Z,@115886 Family Sharing keeps everyone's personal messages and data private while sharing storage. Go to Settings > [Your Name] > Family Sharing > Set Up Your Family > Invite Family Members. Guide: https://t.co/family-sharing,,100056
+100058,cust_11025,True,2026-08-20T13:35:00Z,@AppleSupport How do I create a full encrypted backup of my iPhone to my Mac using Finder?,100059,
+100059,AppleSupport,False,2026-08-20T13:35:00Z,"@115887 Backing up to your Mac is easy. Connect your iPhone via USB, open Finder, select your iPhone in the sidebar, check 'Encrypt local backup', and click 'Back Up Now': https://t.co/mac-backup",,100058
+100060,cust_61014,True,2026-08-26T20:54:00Z,@AppleSupport How do I enable StandBy mode on iOS 17 when my iPhone is charging horizontally on a MagSafe stand?,100061,
+100061,AppleSupport,False,2026-08-26T20:54:00Z,"@115888 StandBy mode activates automatically when your iPhone is locked, plugged into charging, and positioned in landscape orientation. You can customize settings under Settings > StandBy.",,100060
+100062,cust_49983,True,2026-08-12T11:16:00Z,@AppleSupport Waited 45 minutes past my Genius Bar appointment time at the Regent St store with zero updates from staff. Extremely poor customer service.,100063,
+100063,AppleSupport,False,2026-08-12T11:16:00Z,@115889 We deeply apologize for the delay and poor experience during your appointment. We value your time. Please DM us your appointment reservation details and store location so our retail leadership team can address this.,,100062
+100064,cust_99036,True,2026-08-24T18:26:00Z,@AmazonHelp The customer support rep on live chat just disconnected on me without answering my question. Terrible customer experience.,100065,
+100065,AmazonHelp,False,2026-08-24T18:26:00Z,@115890 We are very sorry to hear this happened. This does not meet our customer service standards. Please DM us your email address and chat timestamp so a supervisor can review the transcript and assist you directly.,,100064
+100066,cust_49110,True,2026-08-24T18:11:00Z,@AppleSupport I love the new AirPods Pro hearing aid features! Truly life changing for my elderly mother. Thank you Apple!,100067,
+100067,AppleSupport,False,2026-08-24T18:11:00Z,@115891 That is wonderful to hear! We are so glad the new hearing health features are making a positive difference for your mother. Thank you for sharing your feedback with our team!,,100066
+100068,cust_65866,True,2026-08-11T11:35:00Z,@AppleSupport Your trade-in partner reduced my trade-in valuation from $400 to $100 citing scratches that were not there. This feels like a scam.,100069,
+100069,AppleSupport,False,2026-08-11T11:35:00Z,@115892 We want to make sure your trade-in is evaluated fairly. You have the right to decline the revised quote and have your device returned free of charge. Please DM us your trade-in quote number so we can review the inspection photos.,,100068
+100070,cust_62137,True,2026-08-24T20:21:00Z,@AppleSupport iPhone 12 screen flickering green,100071,
+100071,AppleSupport,False,2026-08-24T20:21:00Z,"@100000 Try a force restart, check for iOS updates, or visit an Apple Store for display diagnostics.",,100070
+100072,cust_49444,True,2026-08-11T13:18:00Z,@AppleSupport iPad Pro USB-C port is loose and only charges at certain angles,100073,
+100073,AppleSupport,False,2026-08-11T13:18:00Z,"@100000 Inspect port for lint, test another Apple charging cable, or book a Genius Bar repair appointment.",,100072
+100074,cust_49066,True,2026-08-25T11:57:00Z,@AppleSupport MacBook trackpad click feels mushy and unresponsive,100075,
+100075,AppleSupport,False,2026-08-25T11:57:00Z,"@100000 SMC reset might help, but swollen battery could cause trackpad resistance. Visit an authorized technician.",,100074
+100076,cust_19410,True,2026-08-15T09:21:00Z,@AppleSupport Apple Watch back glass cracked while exercising,100077,
+100077,AppleSupport,False,2026-08-15T09:21:00Z,@100000 Stop wearing immediately to prevent skin irritation. Contact Apple Support for service options.,,100076
+100078,cust_47637,True,2026-08-26T09:20:00Z,@AppleSupport iPhone 14 speaker volume is extremely low on calls,100079,
+100079,AppleSupport,False,2026-08-26T09:20:00Z,"@100000 Clean receiver mesh with a dry soft-bristled brush, check sound balance settings.",,100078
+100080,cust_98392,True,2026-08-24T11:54:00Z,@AppleSupport iOS update failed with error 4013 on iTunes,100081,
+100081,AppleSupport,False,2026-08-24T11:54:00Z,"@100000 Use an official Apple cable, update iTunes/Finder, and try putting device in DFU or recovery mode.",,100080
+100082,cust_35962,True,2026-08-16T17:14:00Z,@AppleSupport Photos app keeps crashing after iOS 17 update,100083,
+100083,AppleSupport,False,2026-08-16T17:14:00Z,"@100000 Ensure sufficient storage is available, reboot iPhone, and check if background indexing is running.",,100082
+100084,cust_98842,True,2026-08-18T09:25:00Z,@AppleSupport CarPlay disconnects randomly on navigation maps,100085,
+100085,AppleSupport,False,2026-08-18T09:25:00Z,"@100000 Forget car in Settings > General > CarPlay, check Lightning/USB-C cable, and update car infotainment.",,100084
+100086,cust_54101,True,2026-08-17T18:52:00Z,@AppleSupport Face ID not available after water splash,100087,
+100087,AppleSupport,False,2026-08-17T18:52:00Z,"@100000 Allow device to dry completely. If Face ID hardware sensor was damaged, hardware service is required.",,100086
+100088,cust_81230,True,2026-08-23T19:53:00Z,@AppleSupport Keyboard lag and freezing when typing in Messages,100089,
+100089,AppleSupport,False,2026-08-23T19:53:00Z,@100000 Reset keyboard dictionary in Settings > General > Transfer or Reset iPhone > Reset > Reset Keyboard Dictionary.,,100088
+100090,cust_81496,True,2026-08-15T16:12:00Z,@AppleSupport Received a suspicious email claiming my Apple ID is suspended,100091,
+100091,AppleSupport,False,2026-08-15T16:12:00Z,@100000 Do not click links. Genuine Apple emails will never ask for your password. Forward phishing emails to reportphishing@apple.com.,,100090
+100092,cust_16575,True,2026-08-21T18:47:00Z,@AppleSupport Need a tax invoice / receipt for my App Store purchase,100093,
+100093,AppleSupport,False,2026-08-21T18:47:00Z,@100000 View and download receipts directly from reportaproblem.apple.com or your Apple ID purchase history.,,100092
+100094,cust_83480,True,2026-08-19T19:25:00Z,@AppleSupport Two-factor authentication code is not sending to my SMS,100095,
+100095,AppleSupport,False,2026-08-19T19:25:00Z,"@100000 Check cellular signal, verify carrier allows shortcode SMS, or choose 'Didn't get a code' for phone call.",,100094
+100096,cust_35489,True,2026-08-18T18:10:00Z,@AppleSupport My child made accidental in-app purchases in Roblox,100097,
+100097,AppleSupport,False,2026-08-18T18:10:00Z,@100000 Request a refund at reportaproblem.apple.com and turn on 'Require Password' for purchases in Screen Time settings.,,100096
+100098,cust_88378,True,2026-08-15T13:49:00Z,@AppleSupport Apple Card monthly installment payment failed to process,100099,
+100099,AppleSupport,False,2026-08-15T13:49:00Z,@100000 Update billing card in Wallet app > Apple Card > Payment details or reach out to Goldman Sachs support.,,100098
+100100,cust_81371,True,2026-08-11T16:24:00Z,@AmazonHelp Amazon delivery driver threw fragile box over fence and broke items,100101,
+100101,AmazonHelp,False,2026-08-11T16:24:00Z,@100000 We apologize for the careless delivery. Please DM us your order number and photos so we can issue a replacement.,,100100
+100102,cust_53280,True,2026-08-13T14:37:00Z,@AppleSupport Apple order shows 'Preparing to Ship' for 5 days,100103,
+100103,AppleSupport,False,2026-08-13T14:37:00Z,@100000 Delivery estimates on your order confirmation remain accurate as items prepare in our fulfillment centers.,,100102
+100104,cust_43023,True,2026-08-23T10:13:00Z,@AppleSupport Delivery address has wrong apartment number on shipped order,100105,
+100105,AppleSupport,False,2026-08-23T10:13:00Z,@100000 Contact courier directly with tracking number to request address correction or delivery hold.,,100104
+100106,cust_16995,True,2026-08-11T08:27:00Z,@AppleSupport Prime next-day delivery was rescheduled 3 days out,100107,
+100107,AppleSupport,False,2026-08-11T08:27:00Z,@100000 We apologize for unexpected carrier delays. DM us your order ID so we can investigate carrier status.,,100106
+100108,cust_76951,True,2026-08-16T12:55:00Z,@AppleSupport How long does an Apple Store trade-in refund take to hit debit card?,100109,
+100109,AppleSupport,False,2026-08-16T12:55:00Z,@100000 Debit card refunds typically appear within 5 to 7 business days depending on your bank's processing times.,,100108
+100110,cust_37526,True,2026-08-16T16:29:00Z,@AppleSupport Can I return an opened pair of AirPods to Best Buy or Apple?,100111,
+100111,AppleSupport,False,2026-08-16T16:29:00Z,"@100000 If bought directly from Apple, you have 14 days from purchase. If bought at Best Buy, their return policy applies.",,100110
+100112,cust_38653,True,2026-08-22T16:33:00Z,@AppleSupport Refund approved 10 days ago but still no money in bank account,100113,
+100113,AppleSupport,False,2026-08-22T16:33:00Z,@100000 Please contact your financial institution with the refund ARN reference number provided in your refund email.,,100112
+100114,cust_44442,True,2026-08-14T09:50:00Z,@AppleSupport Want to exchange space gray iPhone for silver color,100115,
+100115,AppleSupport,False,2026-08-14T09:50:00Z,@100000 Returns and exchanges can be processed at any Apple Store within 14 days with original packaging.,,100114
+100116,cust_17676,True,2026-08-16T18:27:00Z,@AppleSupport Wi-Fi button is greyed out in iPhone settings,100117,
+100117,AppleSupport,False,2026-08-16T18:27:00Z,"@100000 Try resetting network settings. If greyed out permanently, this indicates a Wi-Fi hardware chip failure.",,100116
+100118,cust_82705,True,2026-08-21T18:25:00Z,@AppleSupport AirPods microphone sounds muffled and quiet during Zoom calls,100119,
+100119,AppleSupport,False,2026-08-21T18:25:00Z,@100000 Check microphone settings in Bluetooth > AirPods > Microphone > Automatically Switch.,,100118
+100120,cust_62088,True,2026-08-20T13:19:00Z,@AppleSupport iCloud notes not syncing between Mac and iPhone,100121,
+100121,AppleSupport,False,2026-08-20T13:19:00Z,@100000 Verify both devices are signed into the exact same Apple ID and Notes is enabled under iCloud settings.,,100120
+100122,cust_82764,True,2026-08-14T20:57:00Z,@AppleSupport Apple Pencil 2 won't pair or charge when attached to iPad magnetic strip,100123,
+100123,AppleSupport,False,2026-08-14T20:57:00Z,"@100000 Clean magnetic connector, restart iPad, and check Bluetooth devices list.",,100122
+100124,cust_16374,True,2026-08-14T12:19:00Z,@AppleSupport How do I turn on Personal Hotspot for my laptop?,100125,
+100125,AppleSupport,False,2026-08-14T12:19:00Z,"@100000 Go to Settings > Personal Hotspot, toggle 'Allow Others to Join', and set a Wi-Fi password.",,100124
+100126,cust_22078,True,2026-08-28T17:45:00Z,@AppleSupport How to screen record with internal audio on iPad?,100127,
+100127,AppleSupport,False,2026-08-28T17:45:00Z,"@100000 Add Screen Recording to Control Center in Settings > Control Center, then long press the record icon.",,100126
+100128,cust_67618,True,2026-08-18T15:15:00Z,@AppleSupport How do I use NameDrop in iOS 17 to share contact info?,100129,
+100129,AppleSupport,False,2026-08-18T15:15:00Z,@100000 Bring the top of your iPhone near the top of another iPhone with AirDrop turned on.,,100128
+100130,cust_12294,True,2026-08-26T11:34:00Z,@AppleSupport How to factory reset an iPhone before selling it?,100131,
+100131,AppleSupport,False,2026-08-26T11:34:00Z,@100000 Go to Settings > General > Transfer or Reset iPhone > Erase All Content and Settings.,,100130
+100132,cust_49863,True,2026-08-25T11:24:00Z,@AppleSupport Very disappointed with the new Apple Music UI update,100133,
+100133,AppleSupport,False,2026-08-25T11:24:00Z,@100000 We appreciate your honest feedback. You can share direct feature requests at apple.com/feedback.,,100132
+100134,cust_16464,True,2026-08-26T17:34:00Z,@AppleSupport Apple Support phone agent was polite and resolved my Mac issue in 5 minutes!,100135,
+100135,AppleSupport,False,2026-08-26T17:34:00Z,@100000 We love to hear this! Thank you for sharing your positive experience with our support team.,,100134
+100136,cust_57219,True,2026-08-13T15:39:00Z,@AppleSupport Why did Apple remove the charger from the box?,100137,
+100137,AppleSupport,False,2026-08-13T15:39:00Z,@100000 Our goal is to reduce environmental impact and carbon emissions across our packaging and supply chain.,,100136
+100138,cust_32299,True,2026-08-17T19:55:00Z,@AppleSupport Store manager at 5th Ave store was rude and refused service,100139,
+100139,AppleSupport,False,2026-08-17T19:55:00Z,@100000 We hold our teams to high standards. Please DM us your visit details so our regional team can investigate.,,100138
+100140,cust_61474,True,2026-08-25T14:30:00Z,@AppleSupport AirPods microphone sounds muffled and quiet during Zoom calls [Ref:963],100141,
+100141,AppleSupport,False,2026-08-25T14:35:00Z,@100140 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100140
+100142,cust_13063,True,2026-08-25T14:30:00Z,@AppleSupport Apple Watch back glass cracked while exercising [Ref:858],100143,
+100143,AppleSupport,False,2026-08-25T14:35:00Z,@100142 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100142
+100144,cust_54293,True,2026-08-25T14:30:00Z,@AppleSupport Refund approved 10 days ago but still no money in bank account [Ref:407],100145,
+100145,AppleSupport,False,2026-08-25T14:35:00Z,@100144 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100144
+100146,cust_21786,True,2026-08-25T14:30:00Z,@AppleSupport I forgot my iCloud passcode and my trusted phone number changed. How do I regain access to my account? [Ref:735],100147,
+100147,AppleSupport,False,2026-08-25T14:35:00Z,@100146 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100146
+100148,cust_85235,True,2026-08-25T14:30:00Z,@AppleSupport Photos app keeps crashing after iOS 17 update [Ref:568],100149,
+100149,AppleSupport,False,2026-08-25T14:35:00Z,@100148 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100148
+100150,cust_86839,True,2026-08-25T14:30:00Z,@AppleSupport My Apple ID has been locked for security reasons. I tried resetting the password through iforgot.apple.com but got stuck in Account Recovery. [Ref:213],100151,
+100151,AppleSupport,False,2026-08-25T14:35:00Z,@100150 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100150
+100152,cust_30508,True,2026-08-25T14:30:00Z,@AppleSupport Keyboard lag and freezing when typing in Messages [Ref:768],100153,
+100153,AppleSupport,False,2026-08-25T14:35:00Z,@100152 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100152
+100154,cust_11383,True,2026-08-25T14:30:00Z,@AppleSupport My AirPods Pro (2nd Gen) keep disconnecting from my iPhone 15 during phone calls every 3 minutes. [Ref:893],100155,
+100155,AppleSupport,False,2026-08-25T14:35:00Z,@100154 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100154
+100156,cust_52275,True,2026-08-25T14:30:00Z,@AppleSupport Apple Watch back glass cracked while exercising [Ref:858] [Ref:297],100157,
+100157,AppleSupport,False,2026-08-25T14:35:00Z,@100156 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100156
+100158,cust_64271,True,2026-08-25T14:30:00Z,@AppleSupport Refund approved 10 days ago but still no money in bank account [Ref:407] [Ref:385],100159,
+100159,AppleSupport,False,2026-08-25T14:35:00Z,@100158 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100158
+100160,cust_27700,True,2026-08-25T14:30:00Z,@AppleSupport My iPhone 11 battery is draining completely within 2 hours of moderate use. Battery health says 74%. Is it time for a replacement? [Ref:765],100161,
+100161,AppleSupport,False,2026-08-25T14:35:00Z,@100160 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100160
+100162,cust_61983,True,2026-08-25T14:30:00Z,@AmazonHelp The courier marked my package as 'Delivery Attempted - Business Closed' but I was home all day at a residential house. [Ref:117],100163,
+100163,AmazonHelp,False,2026-08-25T14:35:00Z,@100162 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100162
+100164,cust_64828,True,2026-08-25T14:30:00Z,@AmazonHelp The customer support rep on live chat just disconnected on me without answering my question. Terrible customer experience. [Ref:108],100165,
+100165,AmazonHelp,False,2026-08-25T14:35:00Z,@100164 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100164
+100166,cust_28147,True,2026-08-25T14:30:00Z,@AppleSupport Keyboard lag and freezing when typing in Messages [Ref:768] [Ref:398],100167,
+100167,AppleSupport,False,2026-08-25T14:35:00Z,@100166 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100166
+100168,cust_50156,True,2026-08-25T14:30:00Z,@AppleSupport I love the new AirPods Pro hearing aid features! Truly life changing for my elderly mother. Thank you Apple! [Ref:353],100169,
+100169,AppleSupport,False,2026-08-25T14:35:00Z,@100168 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100168
+100170,cust_39959,True,2026-08-25T14:30:00Z,@AppleSupport CarPlay disconnects randomly on navigation maps [Ref:847],100171,
+100171,AppleSupport,False,2026-08-25T14:35:00Z,@100170 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100170
+100172,cust_50623,True,2026-08-25T14:30:00Z,@AmazonHelp I paid for same-day Prime delivery and it is now 11 PM with no delivery update. Will this arrive tonight? [Ref:188],100173,
+100173,AmazonHelp,False,2026-08-25T14:35:00Z,@100172 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100172
+100174,cust_48087,True,2026-08-25T14:30:00Z,@AppleSupport Apple Card monthly installment payment failed to process [Ref:764],100175,
+100175,AppleSupport,False,2026-08-25T14:35:00Z,@100174 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100174
+100176,cust_67332,True,2026-08-25T14:30:00Z,@AppleSupport iPhone 12 screen flickering green [Ref:645],100177,
+100177,AppleSupport,False,2026-08-25T14:35:00Z,@100176 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100176
+100178,cust_39784,True,2026-08-25T14:30:00Z,@AppleSupport Need a tax invoice / receipt for my App Store purchase [Ref:451],100179,
+100179,AppleSupport,False,2026-08-25T14:35:00Z,@100178 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100178
+100180,cust_61161,True,2026-08-25T14:30:00Z,@AppleSupport Received a suspicious email claiming my Apple ID is suspended [Ref:321],100181,
+100181,AppleSupport,False,2026-08-25T14:35:00Z,@100180 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100180
+100182,cust_43607,True,2026-08-25T14:30:00Z,@AppleSupport How can I set up Family Sharing so my kids can share our 2TB iCloud storage plan without seeing my personal messages? [Ref:929],100183,
+100183,AppleSupport,False,2026-08-25T14:35:00Z,@100182 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100182
+100184,cust_71684,True,2026-08-25T14:30:00Z,@AppleSupport Prime next-day delivery was rescheduled 3 days out [Ref:864],100185,
+100185,AppleSupport,False,2026-08-25T14:35:00Z,@100184 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100184
+100186,cust_24812,True,2026-08-25T14:30:00Z,@AppleSupport I dropped my iPad Air and the screen is completely cracked and unresponsive to touch. How much will screen repair cost? [Ref:340],100187,
+100187,AppleSupport,False,2026-08-25T14:35:00Z,@100186 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100186
+100188,cust_91752,True,2026-08-25T14:30:00Z,@AppleSupport Apple Watch back glass cracked while exercising [Ref:858] [Ref:482],100189,
+100189,AppleSupport,False,2026-08-25T14:35:00Z,@100188 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100188
+100190,cust_51046,True,2026-08-25T14:30:00Z,@AppleSupport I was charged $14.99 on my credit card from Apple.com/bill but I have no active subscriptions under my Apple ID. [Ref:243],100191,
+100191,AppleSupport,False,2026-08-25T14:35:00Z,@100190 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100190
+100192,cust_50954,True,2026-08-25T14:30:00Z,@AppleSupport iPad Pro USB-C port is loose and only charges at certain angles [Ref:911],100193,
+100193,AppleSupport,False,2026-08-25T14:35:00Z,@100192 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100192
+100194,cust_12520,True,2026-08-25T14:30:00Z,@AppleSupport Delivery address has wrong apartment number on shipped order [Ref:174],100195,
+100195,AppleSupport,False,2026-08-25T14:35:00Z,@100194 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100194
+100196,cust_42534,True,2026-08-25T14:30:00Z,@AppleSupport Prime next-day delivery was rescheduled 3 days out [Ref:655],100197,
+100197,AppleSupport,False,2026-08-25T14:35:00Z,@100196 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100196
+100198,cust_62940,True,2026-08-25T14:30:00Z,@AppleSupport Apple Watch back glass cracked while exercising [Ref:858] [Ref:297] [Ref:806],100199,
+100199,AppleSupport,False,2026-08-25T14:35:00Z,@100198 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100198
+100200,cust_54167,True,2026-08-25T14:30:00Z,@AppleSupport Face ID not available after water splash [Ref:153],100201,
+100201,AppleSupport,False,2026-08-25T14:35:00Z,@100200 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100200
+100202,cust_72761,True,2026-08-25T14:30:00Z,@AppleSupport I received a defective HomePod mini in the mail. Can I exchange it at an Apple retail store today? [Ref:499],100203,
+100203,AppleSupport,False,2026-08-25T14:35:00Z,@100202 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100202
+100204,cust_13074,True,2026-08-25T14:30:00Z,@AppleSupport Face ID not available after water splash [Ref:157],100205,
+100205,AppleSupport,False,2026-08-25T14:35:00Z,@100204 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100204
+100206,cust_14494,True,2026-08-25T14:30:00Z,@AppleSupport Very disappointed with the new Apple Music UI update [Ref:203],100207,
+100207,AppleSupport,False,2026-08-25T14:35:00Z,@100206 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100206
+100208,cust_87937,True,2026-08-25T14:30:00Z,@AppleSupport Apple Watch back glass cracked while exercising [Ref:858] [Ref:297] [Ref:806] [Ref:435],100209,
+100209,AppleSupport,False,2026-08-25T14:35:00Z,@100208 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100208
+100210,cust_26161,True,2026-08-25T14:30:00Z,@AppleSupport Store manager at 5th Ave store was rude and refused service [Ref:794],100211,
+100211,AppleSupport,False,2026-08-25T14:35:00Z,@100210 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100210
+100212,cust_62123,True,2026-08-25T14:30:00Z,@AmazonHelp The customer support rep on live chat just disconnected on me without answering my question. Terrible customer experience. [Ref:888],100213,
+100213,AmazonHelp,False,2026-08-25T14:35:00Z,@100212 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100212
+100214,cust_10683,True,2026-08-25T14:30:00Z,@AppleSupport Want to exchange space gray iPhone for silver color [Ref:339],100215,
+100215,AppleSupport,False,2026-08-25T14:35:00Z,@100214 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100214
+100216,cust_72024,True,2026-08-25T14:30:00Z,@AppleSupport iPad Pro USB-C port is loose and only charges at certain angles [Ref:911] [Ref:265],100217,
+100217,AppleSupport,False,2026-08-25T14:35:00Z,@100216 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100216
+100218,cust_91647,True,2026-08-25T14:30:00Z,@AppleSupport I was double billed for my annual iCloud 2TB storage plan this morning. Can I get the duplicate charge reversed? [Ref:178],100219,
+100219,AppleSupport,False,2026-08-25T14:35:00Z,@100218 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100218
+100220,cust_20501,True,2026-08-25T14:30:00Z,@AppleSupport My iPhone 13 speaker is crackling heavily whenever I play audio or take calls on speakerphone. [Ref:235],100221,
+100221,AppleSupport,False,2026-08-25T14:35:00Z,@100220 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100220
+100222,cust_97853,True,2026-08-25T14:30:00Z,@AppleSupport How do I enable StandBy mode on iOS 17 when my iPhone is charging horizontally on a MagSafe stand? [Ref:957],100223,
+100223,AppleSupport,False,2026-08-25T14:35:00Z,@100222 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100222
+100224,cust_63400,True,2026-08-25T14:30:00Z,@AppleSupport Received a suspicious email claiming my Apple ID is suspended [Ref:321] [Ref:292],100225,
+100225,AppleSupport,False,2026-08-25T14:35:00Z,@100224 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100224
+100226,cust_13013,True,2026-08-25T14:30:00Z,@AmazonHelp The customer support rep on live chat just disconnected on me without answering my question. Terrible customer experience. [Ref:100],100227,
+100227,AmazonHelp,False,2026-08-25T14:35:00Z,@100226 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100226
+100228,cust_93456,True,2026-08-25T14:30:00Z,@AppleSupport Store manager at 5th Ave store was rude and refused service [Ref:717],100229,
+100229,AppleSupport,False,2026-08-25T14:35:00Z,@100228 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100228
+100230,cust_39180,True,2026-08-25T14:30:00Z,@AmazonHelp The customer support rep on live chat just disconnected on me without answering my question. Terrible customer experience. [Ref:100] [Ref:420],100231,
+100231,AmazonHelp,False,2026-08-25T14:35:00Z,@100230 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100230
+100232,cust_97125,True,2026-08-25T14:30:00Z,@AppleSupport My iPhone 13 speaker is crackling heavily whenever I play audio or take calls on speakerphone. [Ref:235] [Ref:852],100233,
+100233,AppleSupport,False,2026-08-25T14:35:00Z,@100232 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100232
+100234,cust_32244,True,2026-08-25T14:30:00Z,@AppleSupport Keyboard lag and freezing when typing in Messages [Ref:768] [Ref:971],100235,
+100235,AppleSupport,False,2026-08-25T14:35:00Z,@100234 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100234
+100236,cust_35739,True,2026-08-25T14:30:00Z,@AppleSupport Keyboard lag and freezing when typing in Messages [Ref:768] [Ref:398] [Ref:682],100237,
+100237,AppleSupport,False,2026-08-25T14:35:00Z,@100236 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100236
+100238,cust_87551,True,2026-08-25T14:30:00Z,@AppleSupport How to screen record with internal audio on iPad? [Ref:193],100239,
+100239,AppleSupport,False,2026-08-25T14:35:00Z,@100238 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100238
+100240,cust_99024,True,2026-08-25T14:30:00Z,@AppleSupport Store manager at 5th Ave store was rude and refused service [Ref:794] [Ref:604],100241,
+100241,AppleSupport,False,2026-08-25T14:35:00Z,@100240 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100240
+100242,cust_41816,True,2026-08-25T14:30:00Z,@AppleSupport Apple Card monthly installment payment failed to process [Ref:422],100243,
+100243,AppleSupport,False,2026-08-25T14:35:00Z,@100242 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100242
+100244,cust_91078,True,2026-08-25T14:30:00Z,@AppleSupport Prime next-day delivery was rescheduled 3 days out [Ref:864] [Ref:616],100245,
+100245,AppleSupport,False,2026-08-25T14:35:00Z,@100244 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100244
+100246,cust_79975,True,2026-08-25T14:30:00Z,@AppleSupport My custom engraved iPad order #W89123477 shows 'Processing' for 2 weeks. When will it actually ship? [Ref:856],100247,
+100247,AppleSupport,False,2026-08-25T14:35:00Z,@100246 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100246
+100248,cust_78179,True,2026-08-25T14:30:00Z,@AppleSupport Face ID not available after water splash [Ref:157] [Ref:727],100249,
+100249,AppleSupport,False,2026-08-25T14:35:00Z,@100248 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100248
+100250,cust_48090,True,2026-08-25T14:30:00Z,@AppleSupport Why did Apple remove the charger from the box? [Ref:346],100251,
+100251,AppleSupport,False,2026-08-25T14:35:00Z,@100250 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100250
+100252,cust_60478,True,2026-08-25T14:30:00Z,@AppleSupport Keyboard lag and freezing when typing in Messages [Ref:627],100253,
+100253,AppleSupport,False,2026-08-25T14:35:00Z,@100252 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100252
+100254,cust_80830,True,2026-08-25T14:30:00Z,@AppleSupport iOS update failed with error 4013 on iTunes [Ref:339],100255,
+100255,AppleSupport,False,2026-08-25T14:35:00Z,@100254 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100254
+100256,cust_87377,True,2026-08-25T14:30:00Z,@AppleSupport CarPlay disconnects randomly on navigation maps [Ref:412],100257,
+100257,AppleSupport,False,2026-08-25T14:35:00Z,@100256 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100256
+100258,cust_94444,True,2026-08-25T14:30:00Z,@AppleSupport My Apple ID has been locked for security reasons. I tried resetting the password through iforgot.apple.com but got stuck in Account Recovery. [Ref:213] [Ref:802],100259,
+100259,AppleSupport,False,2026-08-25T14:35:00Z,@100258 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100258
+100260,cust_43773,True,2026-08-25T14:30:00Z,@AppleSupport Store manager at 5th Ave store was rude and refused service [Ref:319],100261,
+100261,AppleSupport,False,2026-08-25T14:35:00Z,@100260 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100260
+100262,cust_26193,True,2026-08-25T14:30:00Z,@AppleSupport How do I turn on Personal Hotspot for my laptop? [Ref:307],100263,
+100263,AppleSupport,False,2026-08-25T14:35:00Z,@100262 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100262
+100264,cust_18665,True,2026-08-25T14:30:00Z,@AppleSupport I dropped my iPad Air and the screen is completely cracked and unresponsive to touch. How much will screen repair cost? [Ref:437],100265,
+100265,AppleSupport,False,2026-08-25T14:35:00Z,@100264 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100264
+100266,cust_30611,True,2026-08-25T14:30:00Z,@AppleSupport Apple Watch back glass cracked while exercising [Ref:858] [Ref:297] [Ref:806] [Ref:304],100267,
+100267,AppleSupport,False,2026-08-25T14:35:00Z,@100266 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100266
+100268,cust_15177,True,2026-08-25T14:30:00Z,@AmazonHelp Where is my package for order #112-8923741? Tracking said delivered yesterday at 3 PM but nothing was left at my front door. [Ref:372],100269,
+100269,AmazonHelp,False,2026-08-25T14:35:00Z,@100268 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100268
+100270,cust_63545,True,2026-08-25T14:30:00Z,@AppleSupport I received a defective HomePod mini in the mail. Can I exchange it at an Apple retail store today? [Ref:156],100271,
+100271,AppleSupport,False,2026-08-25T14:35:00Z,@100270 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100270
+100272,cust_46429,True,2026-08-25T14:30:00Z,@AppleSupport iPhone 12 screen flickering green [Ref:617],100273,
+100273,AppleSupport,False,2026-08-25T14:35:00Z,@100272 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100272
+100274,cust_87700,True,2026-08-25T14:30:00Z,@AppleSupport My iPadOS update got stuck halfway through the installation bar for over 4 hours. Screen shows Apple logo with a progress bar. [Ref:473],100275,
+100275,AppleSupport,False,2026-08-25T14:35:00Z,@100274 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100274
+100276,cust_39100,True,2026-08-25T14:30:00Z,@AppleSupport Need a tax invoice / receipt for my App Store purchase [Ref:451] [Ref:520],100277,
+100277,AppleSupport,False,2026-08-25T14:35:00Z,@100276 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100276
+100278,cust_95214,True,2026-08-25T14:30:00Z,@AppleSupport I received a defective HomePod mini in the mail. Can I exchange it at an Apple retail store today? [Ref:259],100279,
+100279,AppleSupport,False,2026-08-25T14:35:00Z,@100278 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100278
+100280,cust_67483,True,2026-08-25T14:30:00Z,@AppleSupport Received a suspicious email claiming my Apple ID is suspended [Ref:328],100281,
+100281,AppleSupport,False,2026-08-25T14:35:00Z,@100280 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100280
+100282,cust_55340,True,2026-08-25T14:30:00Z,@AppleSupport Two-factor authentication code is not sending to my SMS [Ref:827],100283,
+100283,AppleSupport,False,2026-08-25T14:35:00Z,@100282 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100282
+100284,cust_54422,True,2026-08-25T14:30:00Z,@AppleSupport Two-factor authentication code is not sending to my SMS [Ref:898],100285,
+100285,AppleSupport,False,2026-08-25T14:35:00Z,@100284 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100284
+100286,cust_91680,True,2026-08-25T14:30:00Z,@AppleSupport My custom engraved iPad order #W89123477 shows 'Processing' for 2 weeks. When will it actually ship? [Ref:856] [Ref:910],100287,
+100287,AppleSupport,False,2026-08-25T14:35:00Z,@100286 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100286
+100288,cust_57667,True,2026-08-25T14:30:00Z,@AppleSupport CarPlay disconnects randomly on navigation maps [Ref:412] [Ref:686],100289,
+100289,AppleSupport,False,2026-08-25T14:35:00Z,@100288 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100288
+100290,cust_42623,True,2026-08-25T14:30:00Z,@AppleSupport My custom engraved iPad order #W89123477 shows 'Processing' for 2 weeks. When will it actually ship? [Ref:856] [Ref:910] [Ref:333],100291,
+100291,AppleSupport,False,2026-08-25T14:35:00Z,@100290 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100290
+100292,cust_78695,True,2026-08-25T14:30:00Z,@AppleSupport Apple Watch back glass cracked while exercising [Ref:858] [Ref:297] [Ref:806] [Ref:495],100293,
+100293,AppleSupport,False,2026-08-25T14:35:00Z,@100292 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100292
+100294,cust_88363,True,2026-08-25T14:30:00Z,@AppleSupport Prime next-day delivery was rescheduled 3 days out [Ref:864] [Ref:473],100295,
+100295,AppleSupport,False,2026-08-25T14:35:00Z,@100294 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100294
+100296,cust_77265,True,2026-08-25T14:30:00Z,@AppleSupport Received a suspicious email claiming my Apple ID is suspended [Ref:599],100297,
+100297,AppleSupport,False,2026-08-25T14:35:00Z,@100296 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100296
+100298,cust_73879,True,2026-08-25T14:30:00Z,@AppleSupport Face ID not available after water splash [Ref:950],100299,
+100299,AppleSupport,False,2026-08-25T14:35:00Z,@100298 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100298
+100300,cust_19546,True,2026-08-25T14:30:00Z,@AppleSupport AirPods microphone sounds muffled and quiet during Zoom calls [Ref:963] [Ref:456],100301,
+100301,AppleSupport,False,2026-08-25T14:35:00Z,@100300 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100300
+100302,cust_34239,True,2026-08-25T14:30:00Z,@AppleSupport My Apple ID has been locked for security reasons. I tried resetting the password through iforgot.apple.com but got stuck in Account Recovery. [Ref:186],100303,
+100303,AppleSupport,False,2026-08-25T14:35:00Z,@100302 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100302
+100304,cust_35913,True,2026-08-25T14:30:00Z,@AppleSupport Bluetooth audio stutters every 30 seconds on iOS 17.2 when connected to car stereo. Was fine on iOS 16. [Ref:703],100305,
+100305,AppleSupport,False,2026-08-25T14:35:00Z,@100304 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100304
+100306,cust_59074,True,2026-08-25T14:30:00Z,"@AmazonHelp I dropped off my return at UPS 8 days ago and tracking shows received, but refund has not posted to my account. [Ref:892]",100307,
+100307,AmazonHelp,False,2026-08-25T14:35:00Z,@100306 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100306
+100308,cust_93594,True,2026-08-25T14:30:00Z,@AppleSupport Apple Watch back glass cracked while exercising [Ref:858] [Ref:297] [Ref:806] [Ref:304] [Ref:352],100309,
+100309,AppleSupport,False,2026-08-25T14:35:00Z,@100308 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100308
+100310,cust_78765,True,2026-08-25T14:30:00Z,@AppleSupport My iPadOS update got stuck halfway through the installation bar for over 4 hours. Screen shows Apple logo with a progress bar. [Ref:940],100311,
+100311,AppleSupport,False,2026-08-25T14:35:00Z,@100310 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100310
+100312,cust_47289,True,2026-08-25T14:30:00Z,@AppleSupport Received a suspicious email claiming my Apple ID is suspended [Ref:435],100313,
+100313,AppleSupport,False,2026-08-25T14:35:00Z,@100312 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100312
+100314,cust_22034,True,2026-08-25T14:30:00Z,@AppleSupport My iPhone 11 battery is draining completely within 2 hours of moderate use. Battery health says 74%. Is it time for a replacement? [Ref:792],100315,
+100315,AppleSupport,False,2026-08-25T14:35:00Z,@100314 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100314
+100316,cust_13551,True,2026-08-25T14:30:00Z,@AppleSupport My custom engraved iPad order #W89123477 shows 'Processing' for 2 weeks. When will it actually ship? [Ref:856] [Ref:910] [Ref:333] [Ref:987],100317,
+100317,AppleSupport,False,2026-08-25T14:35:00Z,@100316 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100316
+100318,cust_62007,True,2026-08-25T14:30:00Z,@AppleSupport Your trade-in partner reduced my trade-in valuation from $400 to $100 citing scratches that were not there. This feels like a scam. [Ref:883],100319,
+100319,AppleSupport,False,2026-08-25T14:35:00Z,@100318 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100318
+100320,cust_51200,True,2026-08-25T14:30:00Z,@AmazonHelp Where is my package for order #112-8923741? Tracking said delivered yesterday at 3 PM but nothing was left at my front door. [Ref:587],100321,
+100321,AmazonHelp,False,2026-08-25T14:35:00Z,@100320 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100320
+100322,cust_17722,True,2026-08-25T14:30:00Z,@AppleSupport Apple Watch back glass cracked while exercising [Ref:858] [Ref:297] [Ref:806] [Ref:495] [Ref:103],100323,
+100323,AppleSupport,False,2026-08-25T14:35:00Z,@100322 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100322
+100324,cust_91869,True,2026-08-25T14:30:00Z,@AppleSupport Prime next-day delivery was rescheduled 3 days out [Ref:864] [Ref:745],100325,
+100325,AppleSupport,False,2026-08-25T14:35:00Z,@100324 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100324
+100326,cust_88544,True,2026-08-25T14:30:00Z,@AppleSupport My custom engraved iPad order #W89123477 shows 'Processing' for 2 weeks. When will it actually ship? [Ref:856] [Ref:910] [Ref:333] [Ref:987] [Ref:886],100327,
+100327,AppleSupport,False,2026-08-25T14:35:00Z,@100326 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100326
+100328,cust_96743,True,2026-08-25T14:30:00Z,@AmazonHelp I paid for same-day Prime delivery and it is now 11 PM with no delivery update. Will this arrive tonight? [Ref:188] [Ref:184],100329,
+100329,AmazonHelp,False,2026-08-25T14:35:00Z,@100328 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100328
+100330,cust_26023,True,2026-08-25T14:30:00Z,@AppleSupport My custom engraved iPad order #W89123477 shows 'Processing' for 2 weeks. When will it actually ship? [Ref:856] [Ref:910] [Ref:333] [Ref:163],100331,
+100331,AppleSupport,False,2026-08-25T14:35:00Z,@100330 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100330
+100332,cust_75550,True,2026-08-25T14:30:00Z,@AppleSupport Want to exchange space gray iPhone for silver color [Ref:990],100333,
+100333,AppleSupport,False,2026-08-25T14:35:00Z,@100332 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100332
+100334,cust_57018,True,2026-08-25T14:30:00Z,@AppleSupport My iPhone 13 speaker is crackling heavily whenever I play audio or take calls on speakerphone. [Ref:235] [Ref:530],100335,
+100335,AppleSupport,False,2026-08-25T14:35:00Z,@100334 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100334
+100336,cust_47203,True,2026-08-25T14:30:00Z,@AppleSupport Photos app keeps crashing after iOS 17 update [Ref:568] [Ref:318],100337,
+100337,AppleSupport,False,2026-08-25T14:35:00Z,@100336 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100336
+100338,cust_27081,True,2026-08-25T14:30:00Z,@AppleSupport Store manager at 5th Ave store was rude and refused service [Ref:794] [Ref:604] [Ref:361],100339,
+100339,AppleSupport,False,2026-08-25T14:35:00Z,@100338 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100338
+100340,cust_92329,True,2026-08-25T14:30:00Z,@AppleSupport I dropped my iPad Air and the screen is completely cracked and unresponsive to touch. How much will screen repair cost? [Ref:765],100341,
+100341,AppleSupport,False,2026-08-25T14:35:00Z,@100340 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100340
+100342,cust_38045,True,2026-08-25T14:30:00Z,@AppleSupport Apple Watch back glass cracked while exercising [Ref:858] [Ref:482] [Ref:540],100343,
+100343,AppleSupport,False,2026-08-25T14:35:00Z,@100342 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100342
+100344,cust_21277,True,2026-08-25T14:30:00Z,@AmazonHelp The customer support rep on live chat just disconnected on me without answering my question. Terrible customer experience. [Ref:100] [Ref:420] [Ref:502],100345,
+100345,AmazonHelp,False,2026-08-25T14:35:00Z,@100344 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100344
+100346,cust_38183,True,2026-08-25T14:30:00Z,@AppleSupport iPad Pro USB-C port is loose and only charges at certain angles [Ref:559],100347,
+100347,AppleSupport,False,2026-08-25T14:35:00Z,@100346 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100346
+100348,cust_39474,True,2026-08-25T14:30:00Z,@AppleSupport I received a defective HomePod mini in the mail. Can I exchange it at an Apple retail store today? [Ref:259] [Ref:913],100349,
+100349,AppleSupport,False,2026-08-25T14:35:00Z,@100348 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100348
+100350,cust_92759,True,2026-08-25T14:30:00Z,@AppleSupport My iPhone 13 speaker is crackling heavily whenever I play audio or take calls on speakerphone. [Ref:235] [Ref:835],100351,
+100351,AppleSupport,False,2026-08-25T14:35:00Z,@100350 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100350
+100352,cust_42865,True,2026-08-25T14:30:00Z,@AppleSupport How do I use NameDrop in iOS 17 to share contact info? [Ref:229],100353,
+100353,AppleSupport,False,2026-08-25T14:35:00Z,@100352 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100352
+100354,cust_47185,True,2026-08-25T14:30:00Z,@AppleSupport Apple Pencil 2 won't pair or charge when attached to iPad magnetic strip [Ref:708],100355,
+100355,AppleSupport,False,2026-08-25T14:35:00Z,@100354 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100354
+100356,cust_77156,True,2026-08-25T14:30:00Z,@AppleSupport My iPhone 13 speaker is crackling heavily whenever I play audio or take calls on speakerphone. [Ref:235] [Ref:530] [Ref:245],100357,
+100357,AppleSupport,False,2026-08-25T14:35:00Z,@100356 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100356
+100358,cust_46287,True,2026-08-25T14:30:00Z,@AppleSupport My Apple ID has been locked for security reasons. I tried resetting the password through iforgot.apple.com but got stuck in Account Recovery. [Ref:186] [Ref:907],100359,
+100359,AppleSupport,False,2026-08-25T14:35:00Z,@100358 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100358
+100360,cust_45954,True,2026-08-25T14:30:00Z,@AppleSupport I love the new AirPods Pro hearing aid features! Truly life changing for my elderly mother. Thank you Apple! [Ref:791],100361,
+100361,AppleSupport,False,2026-08-25T14:35:00Z,@100360 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100360
+100362,cust_19352,True,2026-08-25T14:30:00Z,@AmazonHelp I paid for same-day Prime delivery and it is now 11 PM with no delivery update. Will this arrive tonight? [Ref:188] [Ref:184] [Ref:863],100363,
+100363,AmazonHelp,False,2026-08-25T14:35:00Z,@100362 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100362
+100364,cust_27596,True,2026-08-25T14:30:00Z,@AppleSupport Two-factor authentication code is not sending to my SMS [Ref:898] [Ref:993],100365,
+100365,AppleSupport,False,2026-08-25T14:35:00Z,@100364 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100364
+100366,cust_54829,True,2026-08-25T14:30:00Z,@AppleSupport Apple Support phone agent was polite and resolved my Mac issue in 5 minutes! [Ref:850],100367,
+100367,AppleSupport,False,2026-08-25T14:35:00Z,@100366 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100366
+100368,cust_97587,True,2026-08-25T14:30:00Z,@AppleSupport Very disappointed with the new Apple Music UI update [Ref:203] [Ref:931],100369,
+100369,AppleSupport,False,2026-08-25T14:35:00Z,@100368 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100368
+100370,cust_13818,True,2026-08-25T14:30:00Z,@AppleSupport Want to exchange space gray iPhone for silver color [Ref:245],100371,
+100371,AppleSupport,False,2026-08-25T14:35:00Z,@100370 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100370
+100372,cust_17520,True,2026-08-25T14:30:00Z,@AppleSupport Your trade-in partner reduced my trade-in valuation from $400 to $100 citing scratches that were not there. This feels like a scam. [Ref:883] [Ref:374],100373,
+100373,AppleSupport,False,2026-08-25T14:35:00Z,@100372 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100372
+100374,cust_47054,True,2026-08-25T14:30:00Z,@AppleSupport I was charged $14.99 on my credit card from Apple.com/bill but I have no active subscriptions under my Apple ID. [Ref:243] [Ref:796],100375,
+100375,AppleSupport,False,2026-08-25T14:35:00Z,@100374 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100374
+100376,cust_24613,True,2026-08-25T14:30:00Z,@AmazonHelp The customer support rep on live chat just disconnected on me without answering my question. Terrible customer experience. [Ref:100] [Ref:420] [Ref:502] [Ref:467],100377,
+100377,AmazonHelp,False,2026-08-25T14:35:00Z,@100376 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100376
+100378,cust_60807,True,2026-08-25T14:30:00Z,@AmazonHelp I was sent the wrong shoe size (size 9 instead of 11). How do I get an immediate replacement without being charged again? [Ref:939],100379,
+100379,AmazonHelp,False,2026-08-25T14:35:00Z,@100378 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100378
+100380,cust_81820,True,2026-08-25T14:30:00Z,@AppleSupport I forgot my iCloud passcode and my trusted phone number changed. How do I regain access to my account? [Ref:735] [Ref:446],100381,
+100381,AppleSupport,False,2026-08-25T14:35:00Z,@100380 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100380
+100382,cust_15046,True,2026-08-25T14:30:00Z,@AppleSupport My custom engraved iPad order #W89123477 shows 'Processing' for 2 weeks. When will it actually ship? [Ref:856] [Ref:910] [Ref:333] [Ref:163] [Ref:596],100383,
+100383,AppleSupport,False,2026-08-25T14:35:00Z,@100382 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100382
+100384,cust_26277,True,2026-08-25T14:30:00Z,@AppleSupport Apple Watch back glass cracked while exercising [Ref:858] [Ref:297] [Ref:806] [Ref:123],100385,
+100385,AppleSupport,False,2026-08-25T14:35:00Z,@100384 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100384
+100386,cust_86359,True,2026-08-25T14:30:00Z,@AppleSupport Received a suspicious email claiming my Apple ID is suspended [Ref:328] [Ref:436],100387,
+100387,AppleSupport,False,2026-08-25T14:35:00Z,@100386 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100386
+100388,cust_22885,True,2026-08-25T14:30:00Z,@AppleSupport Two-factor authentication code is not sending to my SMS [Ref:234],100389,
+100389,AppleSupport,False,2026-08-25T14:35:00Z,@100388 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100388
+100390,cust_76107,True,2026-08-25T14:30:00Z,@AppleSupport Two-factor authentication code is not sending to my SMS [Ref:139],100391,
+100391,AppleSupport,False,2026-08-25T14:35:00Z,@100390 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100390
+100392,cust_40419,True,2026-08-25T14:30:00Z,@AppleSupport My iPadOS update got stuck halfway through the installation bar for over 4 hours. Screen shows Apple logo with a progress bar. [Ref:857],100393,
+100393,AppleSupport,False,2026-08-25T14:35:00Z,@100392 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100392
+100394,cust_15078,True,2026-08-25T14:30:00Z,@AppleSupport How do I enable StandBy mode on iOS 17 when my iPhone is charging horizontally on a MagSafe stand? [Ref:957] [Ref:780],100395,
+100395,AppleSupport,False,2026-08-25T14:35:00Z,@100394 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100394
+100396,cust_30401,True,2026-08-25T14:30:00Z,@AppleSupport My custom engraved iPad order #W89123477 shows 'Processing' for 2 weeks. When will it actually ship? [Ref:600],100397,
+100397,AppleSupport,False,2026-08-25T14:35:00Z,@100396 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100396
+100398,cust_15506,True,2026-08-25T14:30:00Z,@AppleSupport iPad Pro USB-C port is loose and only charges at certain angles [Ref:911] [Ref:265] [Ref:610],100399,
+100399,AppleSupport,False,2026-08-25T14:35:00Z,@100398 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100398
+100400,cust_75019,True,2026-08-25T14:30:00Z,@AppleSupport Need a tax invoice / receipt for my App Store purchase [Ref:451] [Ref:520] [Ref:391],100401,
+100401,AppleSupport,False,2026-08-25T14:35:00Z,@100400 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100400
+100402,cust_26557,True,2026-08-25T14:30:00Z,@AppleSupport My iPhone 13 speaker is crackling heavily whenever I play audio or take calls on speakerphone. [Ref:235] [Ref:305],100403,
+100403,AppleSupport,False,2026-08-25T14:35:00Z,@100402 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100402
+100404,cust_86328,True,2026-08-25T14:30:00Z,@AppleSupport How do I enable StandBy mode on iOS 17 when my iPhone is charging horizontally on a MagSafe stand? [Ref:957] [Ref:780] [Ref:985],100405,
+100405,AppleSupport,False,2026-08-25T14:35:00Z,@100404 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100404
+100406,cust_81275,True,2026-08-25T14:30:00Z,@AppleSupport Want to exchange space gray iPhone for silver color [Ref:245] [Ref:452],100407,
+100407,AppleSupport,False,2026-08-25T14:35:00Z,@100406 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100406
+100408,cust_79267,True,2026-08-25T14:30:00Z,@AppleSupport Refund approved 10 days ago but still no money in bank account [Ref:407] [Ref:385] [Ref:160],100409,
+100409,AppleSupport,False,2026-08-25T14:35:00Z,@100408 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100408
+100410,cust_83961,True,2026-08-25T14:30:00Z,@AppleSupport Apple Watch back glass cracked while exercising [Ref:858] [Ref:297] [Ref:806] [Ref:435] [Ref:596],100411,
+100411,AppleSupport,False,2026-08-25T14:35:00Z,@100410 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100410
+100412,cust_87303,True,2026-08-25T14:30:00Z,@AppleSupport Store manager at 5th Ave store was rude and refused service [Ref:794] [Ref:407],100413,
+100413,AppleSupport,False,2026-08-25T14:35:00Z,@100412 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100412
+100414,cust_93589,True,2026-08-25T14:30:00Z,@AppleSupport My iPhone 13 speaker is crackling heavily whenever I play audio or take calls on speakerphone. [Ref:235] [Ref:852] [Ref:355],100415,
+100415,AppleSupport,False,2026-08-25T14:35:00Z,@100414 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100414
+100416,cust_97761,True,2026-08-25T14:30:00Z,@AppleSupport My iPhone 13 speaker is crackling heavily whenever I play audio or take calls on speakerphone. [Ref:235] [Ref:852] [Ref:355] [Ref:819],100417,
+100417,AppleSupport,False,2026-08-25T14:35:00Z,@100416 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100416
+100418,cust_67081,True,2026-08-25T14:30:00Z,@AppleSupport iPad Pro USB-C port is loose and only charges at certain angles [Ref:911] [Ref:265] [Ref:610] [Ref:713],100419,
+100419,AppleSupport,False,2026-08-25T14:35:00Z,@100418 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100418
+100420,cust_67541,True,2026-08-25T14:30:00Z,@AppleSupport Store manager at 5th Ave store was rude and refused service [Ref:794] [Ref:407] [Ref:538],100421,
+100421,AppleSupport,False,2026-08-25T14:35:00Z,@100420 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100420
+100422,cust_36907,True,2026-08-25T14:30:00Z,@AmazonHelp Where is my package for order #112-8923741? Tracking said delivered yesterday at 3 PM but nothing was left at my front door. [Ref:853],100423,
+100423,AmazonHelp,False,2026-08-25T14:35:00Z,@100422 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100422
+100424,cust_67150,True,2026-08-25T14:30:00Z,@AppleSupport Apple Watch back glass cracked while exercising [Ref:858] [Ref:482] [Ref:540] [Ref:671],100425,
+100425,AppleSupport,False,2026-08-25T14:35:00Z,@100424 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100424
+100426,cust_83187,True,2026-08-25T14:30:00Z,@AppleSupport Want to exchange space gray iPhone for silver color [Ref:245] [Ref:985],100427,
+100427,AppleSupport,False,2026-08-25T14:35:00Z,@100426 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100426
+100428,cust_17309,True,2026-08-25T14:30:00Z,@AppleSupport I dropped my iPad Air and the screen is completely cracked and unresponsive to touch. How much will screen repair cost? [Ref:765] [Ref:681],100429,
+100429,AppleSupport,False,2026-08-25T14:35:00Z,@100428 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100428
+100430,cust_52537,True,2026-08-25T14:30:00Z,@AppleSupport I dropped my iPad Air and the screen is completely cracked and unresponsive to touch. How much will screen repair cost? [Ref:437] [Ref:424],100431,
+100431,AppleSupport,False,2026-08-25T14:35:00Z,@100430 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100430
+100432,cust_87050,True,2026-08-25T14:30:00Z,@AppleSupport Apple Watch back glass cracked while exercising [Ref:858] [Ref:297] [Ref:806] [Ref:433],100433,
+100433,AppleSupport,False,2026-08-25T14:35:00Z,@100432 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100432
+100434,cust_25964,True,2026-08-25T14:30:00Z,@AppleSupport I was double billed for my annual iCloud 2TB storage plan this morning. Can I get the duplicate charge reversed? [Ref:178] [Ref:121],100435,
+100435,AppleSupport,False,2026-08-25T14:35:00Z,@100434 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100434
+100436,cust_96124,True,2026-08-25T14:30:00Z,"@AppleSupport Since updating to iOS 17.4, my Phone app crashes every time I tap on the voicemail tab. Phone completely freezes. [Ref:581]",100437,
+100437,AppleSupport,False,2026-08-25T14:35:00Z,@100436 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100436
+100438,cust_24117,True,2026-08-25T14:30:00Z,@AppleSupport MacBook trackpad click feels mushy and unresponsive [Ref:970],100439,
+100439,AppleSupport,False,2026-08-25T14:35:00Z,@100438 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100438
+100440,cust_69978,True,2026-08-25T14:30:00Z,@AppleSupport Bluetooth audio stutters every 30 seconds on iOS 17.2 when connected to car stereo. Was fine on iOS 16. [Ref:703] [Ref:495],100441,
+100441,AppleSupport,False,2026-08-25T14:35:00Z,@100440 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100440
+100442,cust_23394,True,2026-08-25T14:30:00Z,@AppleSupport iPad Pro USB-C port is loose and only charges at certain angles [Ref:927],100443,
+100443,AppleSupport,False,2026-08-25T14:35:00Z,@100442 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100442
+100444,cust_19861,True,2026-08-25T14:30:00Z,@AmazonHelp Where is my package for order #112-8923741? Tracking said delivered yesterday at 3 PM but nothing was left at my front door. [Ref:372] [Ref:457],100445,
+100445,AmazonHelp,False,2026-08-25T14:35:00Z,@100444 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100444
+100446,cust_32397,True,2026-08-25T14:30:00Z,@AmazonHelp The customer support rep on live chat just disconnected on me without answering my question. Terrible customer experience. [Ref:888] [Ref:521],100447,
+100447,AmazonHelp,False,2026-08-25T14:35:00Z,@100446 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100446
+100448,cust_48698,True,2026-08-25T14:30:00Z,@AppleSupport I dropped my iPad Air and the screen is completely cracked and unresponsive to touch. How much will screen repair cost? [Ref:765] [Ref:681] [Ref:965],100449,
+100449,AppleSupport,False,2026-08-25T14:35:00Z,@100448 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100448
+100450,cust_78872,True,2026-08-25T14:30:00Z,@AppleSupport Need a tax invoice / receipt for my App Store purchase [Ref:451] [Ref:520] [Ref:254],100451,
+100451,AppleSupport,False,2026-08-25T14:35:00Z,@100450 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100450
+100452,cust_13663,True,2026-08-25T14:30:00Z,@AppleSupport Need a tax invoice / receipt for my App Store purchase [Ref:451] [Ref:520] [Ref:161],100453,
+100453,AppleSupport,False,2026-08-25T14:35:00Z,@100452 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100452
+100454,cust_91273,True,2026-08-25T14:30:00Z,"@AmazonHelp I dropped off my return at UPS 8 days ago and tracking shows received, but refund has not posted to my account. [Ref:892] [Ref:550]",100455,
+100455,AmazonHelp,False,2026-08-25T14:35:00Z,@100454 Thanks for contacting AmazonHelp. Please check our official guide: https://t.co/support,,100454
+100456,cust_15742,True,2026-08-25T14:30:00Z,@AppleSupport I was double billed for my annual iCloud 2TB storage plan this morning. Can I get the duplicate charge reversed? [Ref:145],100457,
+100457,AppleSupport,False,2026-08-25T14:35:00Z,@100456 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100456
+100458,cust_47663,True,2026-08-25T14:30:00Z,@AppleSupport AirPods microphone sounds muffled and quiet during Zoom calls [Ref:963] [Ref:456] [Ref:339],100459,
+100459,AppleSupport,False,2026-08-25T14:35:00Z,@100458 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100458
+100460,cust_90888,True,2026-08-25T14:30:00Z,@AppleSupport Store manager at 5th Ave store was rude and refused service [Ref:794] [Ref:697],100461,
+100461,AppleSupport,False,2026-08-25T14:35:00Z,@100460 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100460
+100462,cust_21334,True,2026-08-25T14:30:00Z,@AppleSupport Keyboard lag and freezing when typing in Messages [Ref:570],100463,
+100463,AppleSupport,False,2026-08-25T14:35:00Z,@100462 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100462
+100464,cust_98246,True,2026-08-25T14:30:00Z,@AppleSupport I dropped my iPad Air and the screen is completely cracked and unresponsive to touch. How much will screen repair cost? [Ref:765] [Ref:681] [Ref:965] [Ref:764],100465,
+100465,AppleSupport,False,2026-08-25T14:35:00Z,@100464 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100464
+100466,cust_45817,True,2026-08-25T14:30:00Z,@AppleSupport Face ID not available after water splash [Ref:157] [Ref:652],100467,
+100467,AppleSupport,False,2026-08-25T14:35:00Z,@100466 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100466
+100468,cust_96631,True,2026-08-25T14:30:00Z,@AppleSupport Received a suspicious email claiming my Apple ID is suspended [Ref:321] [Ref:292] [Ref:757],100469,
+100469,AppleSupport,False,2026-08-25T14:35:00Z,@100468 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100468
+100470,cust_68236,True,2026-08-25T14:30:00Z,@AppleSupport I forgot my iCloud passcode and my trusted phone number changed. How do I regain access to my account? [Ref:735] [Ref:487],100471,
+100471,AppleSupport,False,2026-08-25T14:35:00Z,@100470 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100470
+100472,cust_74387,True,2026-08-25T14:30:00Z,@AppleSupport How do I use NameDrop in iOS 17 to share contact info? [Ref:395],100473,
+100473,AppleSupport,False,2026-08-25T14:35:00Z,@100472 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100472
+100474,cust_13718,True,2026-08-25T14:30:00Z,@AppleSupport Want to exchange space gray iPhone for silver color [Ref:245] [Ref:452] [Ref:812],100475,
+100475,AppleSupport,False,2026-08-25T14:35:00Z,@100474 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100474
+100476,cust_49141,True,2026-08-25T14:30:00Z,@AppleSupport My custom engraved iPad order #W89123477 shows 'Processing' for 2 weeks. When will it actually ship? [Ref:856] [Ref:910] [Ref:333] [Ref:592],100477,
+100477,AppleSupport,False,2026-08-25T14:35:00Z,@100476 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100476
+100478,cust_34084,True,2026-08-25T14:30:00Z,@AppleSupport iPhone 12 screen flickering green [Ref:533],100479,
+100479,AppleSupport,False,2026-08-25T14:35:00Z,@100478 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100478
+100480,cust_98411,True,2026-08-25T14:30:00Z,@AppleSupport Received a suspicious email claiming my Apple ID is suspended [Ref:321] [Ref:113],100481,
+100481,AppleSupport,False,2026-08-25T14:35:00Z,@100480 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100480
+100482,cust_68284,True,2026-08-25T14:30:00Z,@AppleSupport I was charged $14.99 on my credit card from Apple.com/bill but I have no active subscriptions under my Apple ID. [Ref:243] [Ref:796] [Ref:577],100483,
+100483,AppleSupport,False,2026-08-25T14:35:00Z,@100482 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100482
+100484,cust_51472,True,2026-08-25T14:30:00Z,@AppleSupport Need a tax invoice / receipt for my App Store purchase [Ref:451] [Ref:520] [Ref:161] [Ref:931],100485,
+100485,AppleSupport,False,2026-08-25T14:35:00Z,@100484 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100484
+100486,cust_89976,True,2026-08-25T14:30:00Z,@AppleSupport My AirPods Pro (2nd Gen) keep disconnecting from my iPhone 15 during phone calls every 3 minutes. [Ref:893] [Ref:611],100487,
+100487,AppleSupport,False,2026-08-25T14:35:00Z,@100486 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100486
+100488,cust_35582,True,2026-08-25T14:30:00Z,@AppleSupport Received a suspicious email claiming my Apple ID is suspended [Ref:435] [Ref:783],100489,
+100489,AppleSupport,False,2026-08-25T14:35:00Z,@100488 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100488
+100490,cust_21445,True,2026-08-25T14:30:00Z,@AppleSupport Keyboard lag and freezing when typing in Messages [Ref:768] [Ref:626],100491,
+100491,AppleSupport,False,2026-08-25T14:35:00Z,@100490 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100490
+100492,cust_97920,True,2026-08-25T14:30:00Z,@AppleSupport My card was declined for an App Store in-app purchase even though my bank says the card is active and funded. [Ref:345],100493,
+100493,AppleSupport,False,2026-08-25T14:35:00Z,@100492 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100492
+100494,cust_20108,True,2026-08-25T14:30:00Z,@AppleSupport I was double billed for my annual iCloud 2TB storage plan this morning. Can I get the duplicate charge reversed? [Ref:178] [Ref:121] [Ref:839],100495,
+100495,AppleSupport,False,2026-08-25T14:35:00Z,@100494 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100494
+100496,cust_86386,True,2026-08-25T14:30:00Z,@AppleSupport Apple Pencil 2 won't pair or charge when attached to iPad magnetic strip [Ref:547],100497,
+100497,AppleSupport,False,2026-08-25T14:35:00Z,@100496 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100496
+100498,cust_50381,True,2026-08-25T14:30:00Z,@AppleSupport Keyboard lag and freezing when typing in Messages [Ref:768] [Ref:626] [Ref:715],100499,
+100499,AppleSupport,False,2026-08-25T14:35:00Z,@100498 Thanks for contacting AppleSupport. Please check our official guide: https://t.co/support,,100498
