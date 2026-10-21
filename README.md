@@ -178,4 +178,5 @@ python run_pipeline.py --stage all --brand AmazonHelp
 - [`report.md`](report.md): Full technical engineering report, architecture diagrams, benchmark analysis, and 5-case RCA.
 - [`decision_log.md`](decision_log.md): 14 Architectural Decision Records (ADRs) explaining engineering trade-offs.
 #   B r a n d S u p p o r t - A I  
+ #   B r a n d s u p p o r t - A I  
  
